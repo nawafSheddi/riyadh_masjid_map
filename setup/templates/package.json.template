@@ -1,0 +1,153 @@
+{
+  "name": "{{PROJECT_NAME}}",
+  "version": "1.0.0",
+  "description": "{{PROJECT_DESCRIPTION}}",
+  "type": "module",
+  "author": "{{AUTHOR_NAME}} <{{AUTHOR_EMAIL}}>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "tailwind"
+  ],
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+
+    "dev:docker": "docker-compose -f docker-compose.yml up dev",
+    "dev:stop": "docker-compose -f docker-compose.yml down",
+    "dev:restart": "docker-compose -f docker-compose.yml down && docker-compose -f docker-compose.yml up dev",
+
+    "prod:test": "docker-compose -f docker-compose.yml --profile production up prod-test",
+    "prod:stop": "docker-compose -f docker-compose.yml down",
+
+    "docker:add": "docker-compose -f docker-compose.yml run --rm dev npm add",
+    "docker:install": "docker-compose -f docker-compose.yml run --rm dev npm install",
+    "docker:lint": "docker-compose -f docker-compose.yml run --rm dev npm run lint",
+    "docker:typecheck": "docker-compose -f docker-compose.yml run --rm dev tsc --noEmit",
+    "docker:build": "docker-compose -f docker-compose.yml run --rm dev npm run build",
+    "docker:clean": "docker-compose -f docker-compose.yml down -v && docker system prune -f"
+  },
+  "dependencies": {
+    "@radix-ui/react-switch": "^1.2.6",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "tailwind-merge": "^3.3.1",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "@vitejs/plugin-react": "^5.0.3",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.37.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^6.1.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.6"
+  }
+}
+
+<!--
+CUSTOMIZATION NOTES:
+
+1. Replace {{PLACEHOLDERS}}:
+   - {{PROJECT_NAME}}: Your project name (lowercase-with-hyphens)
+   - {{PROJECT_DESCRIPTION}}: Brief project description
+   - {{AUTHOR_NAME}}: Your name
+   - {{AUTHOR_EMAIL}}: Your email
+
+2. Optional dependencies (add if needed):
+
+   For internationalization:
+   npm install i18next@^25.5.2 react-i18next@^16.0.0
+
+   For QR codes:
+   npm install qrcode.react@^4.2.0 @types/qrcode.react@^1.0.5
+
+   For forms:
+   npm install react-hook-form@^7.x zod@^3.x
+
+   For dates:
+   npm install date-fns@^3.x
+
+3. Script explanations:
+
+   Core scripts:
+   - dev: Start Vite development server (port 5173)
+   - build: TypeScript check + Vite production build
+   - preview: Preview production build locally
+   - lint: Run ESLint with TypeScript (max 0 warnings)
+   - typecheck: TypeScript check without build
+
+   Docker scripts (optional - remove if not using Docker):
+   - dev:docker: Start development in Docker container
+   - dev:stop: Stop Docker development container
+   - dev:restart: Restart Docker development
+   - prod:test: Test production build in Docker
+   - prod:stop: Stop production Docker containers
+   - docker:add: Add npm package inside Docker
+   - docker:install: Install dependencies in Docker
+   - docker:lint: Run linting in Docker
+   - docker:typecheck: TypeScript check in Docker
+   - docker:build: Build production in Docker
+   - docker:clean: Remove all containers and volumes
+
+4. Version pinning:
+   - ^ allows minor updates (recommended for most packages)
+   - ~ allows patch updates only (more conservative)
+   - No prefix: exact version (use for critical dependencies)
+
+5. Package purposes:
+
+   Production dependencies:
+   - react, react-dom: UI library
+   - react-router-dom: Client-side routing
+   - zustand: Lightweight state management
+   - lucide-react: Icon library
+   - class-variance-authority: Type-safe component variants
+   - clsx: Conditional classnames
+   - tailwind-merge: Merge Tailwind classes without conflicts
+   - @radix-ui/react-switch: Accessible UI primitives
+
+   Development dependencies:
+   - vite: Build tool with fast HMR
+   - typescript: Type checking
+   - tailwindcss: Utility-first CSS framework
+   - eslint: Code linting
+   - @typescript-eslint/*: TypeScript ESLint support
+   - eslint-plugin-react*: React-specific ESLint rules
+   - autoprefixer: CSS vendor prefixes
+   - postcss: CSS transformations
+   - @types/*: TypeScript type definitions
+
+6. Remove Docker scripts if not using Docker:
+   Simply delete all scripts starting with "dev:docker", "prod:", and "docker:"
+
+7. Add deployment scripts as needed:
+   For Cloudflare Pages:
+   "deploy": "npm run build && wrangler pages publish dist"
+
+   For Vercel:
+   No script needed - Vercel auto-detects
+
+   For Netlify:
+   "deploy": "npm run build && netlify deploy --prod --dir=dist"
+
+-->

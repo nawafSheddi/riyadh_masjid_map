@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # Development Service
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: masjid-map-dev
+
+    ports:
+      - "5173:5173"
+
+    environment:
+      - NODE_ENV=development
+      - VITE_APP_VERSION=${VITE_APP_VERSION:-dev}
+      - VITE_MAP_STYLE_URL=${VITE_MAP_STYLE_URL:-/styles/masjid-map-style.json}
+
+    volumes:
+      - .:/app:delegated
+      - /app/node_modules
+      - /app/dist
+
+    command: npm run dev -- --host
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5173"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Production Test Service
+  prod-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - VITE_APP_VERSION=${VITE_APP_VERSION:-1.0.0}
+        - VITE_MAP_STYLE_URL=${VITE_MAP_STYLE_URL:-/styles/masjid-map-style.json}
+      target: production
+
+    container_name: masjid-map-prod-test
+
+    ports:
+      - "8080:8080"
+
+    profiles:
+      - production
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3

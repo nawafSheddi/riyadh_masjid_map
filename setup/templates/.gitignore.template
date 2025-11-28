@@ -1,0 +1,254 @@
+# ===== ENVIRONMENT VARIABLES (CRITICAL - PREVENT SECRET LEAKS) =====
+# NEVER commit environment files with secrets
+.env
+.env.*
+.env.local
+.env.*.local
+*.env
+
+# Exception: Keep .env.example for documentation
+!.env.example
+
+# ===== NODE.JS / NPM =====
+# Dependencies (install fresh in each environment)
+node_modules/
+
+# Package manager lock files (choose one based on your preference)
+# Uncomment the one you DON'T use:
+# package-lock.json  # If using yarn or pnpm
+# yarn.lock          # If using npm or pnpm
+# pnpm-lock.yaml     # If using npm or yarn
+
+# npm debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== BUILD OUTPUTS =====
+# Vite build output
+dist/
+dist-ssr/
+
+# Other build folders
+build/
+out/
+
+# Vite cache
+.vite/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# ===== DEVELOPMENT FILES =====
+# Local development overrides
+*.local
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# ===== IDE / EDITOR FILES =====
+# VS Code
+.vscode/
+.vscode-test/
+
+# Exception: Keep recommended extensions
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ===== OPERATING SYSTEM FILES =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ===== LOGS =====
+logs/
+log/
+*.log
+*.log.*
+
+# Application-specific logs
+neon_import.log
+analytics.log
+error.log
+access.log
+
+# ===== TESTING =====
+# Test coverage reports
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# E2E testing artifacts
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ===== DOCKER =====
+# Docker override files (keep base docker-compose.yml)
+docker-compose.override.yml
+
+# Docker volumes data
+.docker/
+
+# ===== TEMPORARY FILES =====
+*.tmp
+*.bak
+*.backup
+*.swp
+*.swo
+tmp/
+temp/
+.temp/
+.cache/
+
+# ===== PROJECT MANAGEMENT (Optional) =====
+# Task management (if you prefer to keep kanban.md private)
+# kanban.md
+# archive.md
+
+# Personal notes
+NOTES.md
+TODO.md
+.notes/
+
+# ===== SECURITY & SENSITIVE DATA =====
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Secrets directory
+secrets/
+.secrets/
+
+# Auth tokens
+.npmrc
+.yarnrc.yml
+
+# ===== CLAUDE CODE (Optional) =====
+# If you want to keep skills private in a multi-developer environment
+# .claude/skills/
+
+# ===== PYTHON (If using Python backend alongside frontend) =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Python virtual environments
+bin/
+include/
+lib/
+lib64/
+share/
+pyvenv.cfg
+
+# ===== DATA FILES (If storing data locally) =====
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.sqlite3
+
+data/raw/
+data/processed/
+data/outputs/*.json
+data/outputs/*.html
+
+# ===== JUPYTER NOTEBOOKS (If using for data analysis) =====
+.ipynb_checkpoints/
+*.ipynb
+
+# ===== DOCUMENTATION BUILDS =====
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# ===== DISTRIBUTION / PACKAGING =====
+*.egg-info/
+.eggs/
+
+# ===== OUTPUT FILES =====
+output/
+results/
+reports/
+*.pdf
+
+# ===== STORYBOOK (If using Storybook for component development) =====
+# storybook-static/
+
+# ===== SENTRY (If using Sentry for error tracking) =====
+# .sentryclirc
+
+# ===== USAGE NOTES =====
+#
+# 1. Verify .env is ignored:
+#    git status
+#    (should not show .env file)
+#
+# 2. Check what would be committed:
+#    git status
+#    git diff --cached
+#
+# 3. Force add ignored file (dangerous!):
+#    git add -f <file>
+#    (generally never do this)
+#
+# 4. Remove accidentally committed .env:
+#    git rm --cached .env
+#    git commit -m "Remove .env from repository"
+#    git push
+#    (then rotate all secrets immediately!)
+#
+# 5. Global .gitignore (for personal files):
+#    git config --global core.excludesfile ~/.gitignore_global

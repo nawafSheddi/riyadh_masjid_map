@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+.cache/
+out/
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+secrets/
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Documentation
+*.md
+!README.md
+docs/
+LICENSE
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# CI/CD
+.github/
+.gitlab/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Testing
+coverage/
+test-results/
+__tests__/
+*.test.*
+*.spec.*
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Project management
+.claude/
+kanban.md
+archive.md
+CLAUDE.md
+
+# OS files
+.DS_Store
+Thumbs.db

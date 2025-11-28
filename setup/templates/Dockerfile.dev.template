@@ -1,0 +1,37 @@
+# =============================================================================
+# Development Dockerfile Template
+# =============================================================================
+# Optimized for development with hot-reload support
+# Mounts source code as volumes for instant file changes without rebuilding
+#
+# BEFORE USING:
+# - No customization needed for most projects
+# - Optionally add development tools (curl, wget, etc.) in RUN apk add
+# =============================================================================
+
+FROM node:20-alpine
+
+# Install git for better development experience
+# Add other development tools here if needed
+RUN apk add --no-cache git
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json ./
+
+# Install ALL dependencies (including devDependencies)
+RUN npm install
+
+# Copy source code
+# Note: docker-compose will mount volumes for hot-reload
+COPY . .
+
+# Expose Vite dev server port
+# Change if your dev server uses a different port
+EXPOSE 5173
+
+# Start dev server with --host flag (allows external access from Docker host)
+# Customize if you use a different dev server command
+CMD ["npm", "run", "dev", "--", "--host"]

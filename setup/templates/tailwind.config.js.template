@@ -1,0 +1,158 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  // ===== DARK MODE CONFIGURATION =====
+  // Use class-based dark mode (toggle with "dark" class on <html>)
+  // Alternative: "media" for OS preference detection
+  darkMode: "class",
+
+  // ===== CONTENT PATHS =====
+  // Tailwind scans these files for class names
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+  // ===== THEME CUSTOMIZATION =====
+  theme: {
+    extend: {
+      // ===== TYPOGRAPHY =====
+      fontFamily: {
+        // Primary font family (replace with your choice)
+        // Example: 'Cairo' for Arabic support, 'Inter' for Latin
+        cairo: ['Cairo', 'sans-serif'],
+        sans: ['Cairo', 'sans-serif'],
+      },
+
+      // ===== SEMANTIC COLOR SYSTEM =====
+      // Use CSS custom properties for theme switching
+      colors: {
+        // --- Core Theme Colors (90-95% usage) ---
+        background: {
+          DEFAULT: "var(--color-background)", // Main background
+          cardDark: "var(--color-background-card-dark)", // Dark mode card
+        },
+        foreground: {
+          DEFAULT: "var(--color-foreground)", // Main text color
+          muted: "var(--color-foreground-muted)", // Secondary text
+          mutedDark: "var(--color-foreground-muted-dark)", // Tertiary text
+        },
+
+        // --- Accent/Brand Colors (5-10% usage) ---
+        accent: {
+          DEFAULT: "var(--color-accent)", // Primary accent (e.g., orange)
+          dark: "var(--color-accent-dark)", // Accent on light backgrounds
+        },
+
+        // --- Utility Colors ---
+        border: "var(--color-border)", // Border color
+        disabled: "var(--color-disabled)", // Disabled state
+        placeholder: "var(--color-placeholder)", // Placeholder text
+
+        // --- Semantic Colors ---
+        success: "var(--color-success)", // Green
+        warning: "var(--color-warning)", // Amber
+        error: "var(--color-error)", // Red
+        info: "var(--color-info)", // Blue
+        destructive: "var(--color-error)", // Alias for error
+
+        // --- Application-Specific Colors ---
+        // Example: Status colors for giveaway states
+        status: {
+          live: "var(--color-status-live)",
+          new: "var(--color-status-new)",
+          soon: "var(--color-status-soon)",
+          ended: "var(--color-status-ended)",
+          inactive: "var(--color-status-inactive)",
+        },
+
+        // --- shadcn/ui Compatibility ---
+        // Required for shadcn/ui components
+        primary: {
+          DEFAULT: "var(--color-foreground)", // Button backgrounds
+          foreground: "var(--color-accent)", // Button text
+        },
+        secondary: {
+          DEFAULT: "transparent",
+          foreground: "var(--color-foreground)",
+        },
+        muted: {
+          DEFAULT: "var(--color-background)",
+          foreground: "var(--color-placeholder)",
+        },
+        card: {
+          DEFAULT: "var(--color-background)",
+          foreground: "var(--color-foreground)",
+        },
+        input: "var(--color-border)",
+        ring: "var(--color-foreground)", // Focus ring color
+      },
+
+      // ===== BORDER RADIUS =====
+      borderRadius: {
+        lg: "12px", // Large radius (cards, modals)
+        md: "8px",  // Medium radius (buttons, inputs)
+        sm: "4px",  // Small radius (badges, chips)
+      },
+
+      // ===== SPACING =====
+      spacing: {
+        // Touch-friendly minimum sizes (44x44px iOS guideline)
+        'touch': '44px',
+        'touch-lg': '48px',
+      },
+
+      // ===== MINIMUM DIMENSIONS =====
+      minHeight: {
+        'touch': '44px',
+        'touch-lg': '48px',
+      },
+      minWidth: {
+        'touch': '44px',
+        'touch-lg': '48px',
+      },
+
+      // ===== ANIMATIONS (Uncomment if needed) =====
+      // keyframes: {
+      //   'fade-in': {
+      //     '0%': { opacity: '0' },
+      //     '100%': { opacity: '1' },
+      //   },
+      //   'slide-in': {
+      //     '0%': { transform: 'translateY(10px)', opacity: '0' },
+      //     '100%': { transform: 'translateY(0)', opacity: '1' },
+      //   },
+      // },
+      // animation: {
+      //   'fade-in': 'fade-in 0.3s ease-out',
+      //   'slide-in': 'slide-in 0.3s ease-out',
+      // },
+    },
+  },
+
+  // ===== PLUGINS =====
+  plugins: [
+    // Add Tailwind plugins here
+    // Examples:
+    // require('@tailwindcss/forms'),
+    // require('@tailwindcss/typography'),
+    // require('@tailwindcss/aspect-ratio'),
+  ],
+}
+
+// ===== USAGE NOTES =====
+// 1. Define CSS custom properties in src/styles/globals.css:
+//    :root { --color-background: #ffffff; }
+//    [data-theme="dark"] { --color-background: #000000; }
+//
+// 2. Use semantic colors in components:
+//    ✅ Good: bg-background text-foreground
+//    ❌ Bad: bg-white text-black
+//
+// 3. Touch targets:
+//    ✅ Good: min-h-touch (44px minimum)
+//    ❌ Bad: h-8 (32px, too small for touch)
+//
+// 4. Border radius consistency:
+//    Cards: rounded-lg (12px)
+//    Buttons: rounded-md (8px)
+//    Badges: rounded-sm (4px)

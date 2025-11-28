@@ -1,0 +1,136 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  // ===== PLUGINS =====
+  plugins: [
+    // React plugin with Fast Refresh support
+    react(),
+  ],
+
+  // ===== MODULE RESOLUTION =====
+  resolve: {
+    // Path aliases for clean imports
+    // Matches tsconfig.json paths configuration
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+
+  // ===== DEVELOPMENT SERVER =====
+  server: {
+    // Dev server port (default: 5173)
+    port: 5173,
+
+    // Automatically open browser on server start
+    // open: true,
+
+    // Enable CORS for API requests during development
+    // cors: true,
+
+    // Proxy API requests to backend (if needed)
+    // proxy: {
+    //   '/api': {
+    //     target: 'http://localhost:8000',
+    //     changeOrigin: true,
+    //     rewrite: (path) => path.replace(/^\/api/, ''),
+    //   },
+    // },
+  },
+
+  // ===== PRODUCTION BUILD =====
+  build: {
+    // Output directory for production build
+    outDir: 'dist',
+
+    // Generate source maps for debugging
+    // Set to false in production for smaller bundles
+    sourcemap: false,
+
+    // Minify with esbuild (faster than terser)
+    minify: 'esbuild',
+
+    // Target modern browsers for smaller bundles
+    target: 'es2020',
+
+    // Rollup configuration
+    rollupOptions: {
+      output: {
+        // ===== FILE NAMING WITH CACHE BUSTING =====
+        // JavaScript files: assets/[name].[hash].js
+        entryFileNames: 'assets/[name].[hash].js',
+
+        // Code-split chunks: assets/[name].[hash].js
+        chunkFileNames: 'assets/[name].[hash].js',
+
+        // Static assets (CSS, images): assets/[name].[hash].[ext]
+        assetFileNames: 'assets/[name].[hash].[ext]',
+
+        // ===== CODE SPLITTING CONFIGURATION =====
+        // Uncomment to split vendor code into separate chunk
+        // manualChunks: {
+        //   vendor: ['react', 'react-dom'],
+        //   ui: ['@/components/ui'],
+        // },
+      },
+    },
+
+    // ===== CHUNK SIZE WARNINGS =====
+    // Warn if chunk exceeds 500KB (adjust based on needs)
+    chunkSizeWarningLimit: 500,
+  },
+
+  // ===== OPTIMIZATIONS =====
+  optimizeDeps: {
+    // Pre-bundle these dependencies for faster dev server startup
+    // include: ['react', 'react-dom'],
+
+    // Exclude from pre-bundling (if causing issues)
+    // exclude: [],
+  },
+
+  // ===== PREVIEW SERVER (for testing production build) =====
+  preview: {
+    // Preview server port
+    port: 4173,
+
+    // Automatically open browser
+    // open: true,
+  },
+})
+
+// ===== COMMON CUSTOMIZATIONS =====
+
+// 1. Bundle Analysis (install: npm i -D rollup-plugin-visualizer)
+// import { visualizer } from 'rollup-plugin-visualizer'
+// plugins: [
+//   react(),
+//   visualizer({ open: true }),
+// ],
+
+// 2. Environment-specific builds
+// export default defineConfig(({ mode }) => {
+//   const isDev = mode === 'development'
+//   return {
+//     plugins: [react()],
+//     build: {
+//       sourcemap: isDev,
+//     },
+//   }
+// })
+
+// 3. PWA Support (install: npm i -D vite-plugin-pwa)
+// import { VitePWA } from 'vite-plugin-pwa'
+// plugins: [
+//   react(),
+//   VitePWA({
+//     registerType: 'autoUpdate',
+//     manifest: {
+//       name: 'Your App Name',
+//       short_name: 'App',
+//       theme_color: '#ffffff',
+//     },
+//   }),
+// ],

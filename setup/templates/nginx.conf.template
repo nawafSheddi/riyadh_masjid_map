@@ -1,0 +1,128 @@
+# =============================================================================
+# Nginx Configuration Template for React SPA
+# =============================================================================
+# Optimized for Single Page Applications with client-side routing
+#
+# BEFORE USING:
+# 1. Review security headers and adjust for your needs
+# 2. Update cache durations if needed
+# 3. Add custom routes or API proxying if required
+# 4. Consider adding CSP (Content Security Policy) headers
+# =============================================================================
+
+server {
+    # Listen on non-privileged port (allows non-root nginx)
+    listen 8080;
+    server_name _;
+
+    # Root directory where built files are located
+    root /usr/share/nginx/html;
+    index index.html;
+
+    # ==========================================================================
+    # Gzip Compression
+    # ==========================================================================
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_types
+        text/plain
+        text/css
+        text/xml
+        text/javascript
+        application/json
+        application/javascript
+        application/xml+rss
+        application/atom+xml
+        image/svg+xml;
+
+    # ==========================================================================
+    # Security Headers
+    # ==========================================================================
+    # Customize these based on your security requirements
+
+    # Prevent clickjacking
+    add_header X-Frame-Options "SAMEORIGIN" always;
+
+    # Prevent MIME sniffing
+    add_header X-Content-Type-Options "nosniff" always;
+
+    # Enable XSS filter
+    add_header X-XSS-Protection "1; mode=block" always;
+
+    # Control referrer information
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+
+    # Optional: Content Security Policy (uncomment and customize)
+    # add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';" always;
+
+    # Optional: Strict Transport Security (uncomment for HTTPS)
+    # add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+
+    # ==========================================================================
+    # Health Check Endpoint
+    # ==========================================================================
+    # Used by Docker, Kubernetes, load balancers
+    location /health {
+        access_log off;
+        return 200 '{"status":"UP","timestamp":"$date_gmt"}';
+        add_header Content-Type application/json;
+    }
+
+    # ==========================================================================
+    # Caching Strategy
+    # ==========================================================================
+
+    # No cache for index.html (ensures users always get latest version)
+    location = /index.html {
+        expires -1;
+        add_header Cache-Control "no-store, no-cache, must-revalidate";
+    }
+
+    # Long cache for hashed assets (Vite/Webpack generate hash-based filenames)
+    # Pattern: /assets/main.a8b3c9d2.js
+    location ~* ^/assets/.*\.[a-f0-9]{8,}\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+        access_log off;
+    }
+
+    # Medium cache for other assets
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
+        expires 1h;
+        add_header Cache-Control "public";
+    }
+
+    # ==========================================================================
+    # SPA Routing (Critical for React Router)
+    # ==========================================================================
+    # Serves index.html for all routes, allowing client-side routing to work
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # ==========================================================================
+    # Optional: API Proxying
+    # ==========================================================================
+    # Uncomment and customize if you need to proxy API requests
+    # Useful for avoiding CORS issues in development/testing
+    #
+    # location /api {
+    #     proxy_pass http://api-backend:8000;
+    #     proxy_set_header Host $host;
+    #     proxy_set_header X-Real-IP $remote_addr;
+    #     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    #     proxy_set_header X-Forwarded-Proto $scheme;
+    # }
+
+    # ==========================================================================
+    # Security: Deny Access to Hidden Files
+    # ==========================================================================
+    location ~ /\. {
+        deny all;
+        access_log off;
+        log_not_found off;
+    }
+}

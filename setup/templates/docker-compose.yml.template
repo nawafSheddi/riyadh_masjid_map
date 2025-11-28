@@ -1,0 +1,127 @@
+# =============================================================================
+# Docker Compose Template for Local Development
+# =============================================================================
+# BEFORE USING:
+# 1. Replace all {{PROJECT_NAME}} with your actual project name
+# 2. Update environment variables to match your app
+# 3. Adjust ports if 5173 or 8080 are already in use
+# 4. Update default URLs for your API endpoints
+# =============================================================================
+
+version: '3.8'
+
+services:
+  # ==========================================================================
+  # Development Service - Your Daily Driver
+  # ==========================================================================
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: {{PROJECT_NAME}}-dev
+
+    # Port mapping
+    # Change left side (host port) if 5173 is already in use
+    ports:
+      - "5173:5173"
+
+    # Environment variables for development
+    # Update these to match your application's env vars
+    environment:
+      - NODE_ENV=development
+      - VITE_API_URL=${VITE_API_URL:-http://localhost:8000}
+      - VITE_WEBSOCKET_URL=${VITE_WEBSOCKET_URL:-ws://localhost:8000/ws}
+      - VITE_APP_VERSION=${VITE_APP_VERSION:-dev}
+      # Add your custom environment variables here
+      # - VITE_YOUR_CUSTOM_VAR=${VITE_YOUR_CUSTOM_VAR:-default-value}
+
+    # Volume mounts for hot-reload
+    volumes:
+      # Mount entire project (except what's in .dockerignore)
+      - .:/app:delegated
+
+      # Prevent node_modules from being overwritten by host
+      - /app/node_modules
+
+      # Prevent dist from being overwritten
+      - /app/dist
+
+    # Command to start Vite dev server
+    # Customize if you use a different command
+    command: npm run dev -- --host
+
+    # Auto-restart if it crashes
+    restart: unless-stopped
+
+    # Health check
+    # Update URL if your dev server runs on a different port
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5173"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ==========================================================================
+  # Production Test Service (Optional)
+  # ==========================================================================
+  # Use this to test production builds locally before deploying
+  # Only runs when explicitly requested with --profile production
+  prod-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Update these to match your production environment
+        - VITE_API_URL=${VITE_API_URL:-https://api.yourdomain.com}
+        - VITE_WEBSOCKET_URL=${VITE_WEBSOCKET_URL:-wss://api.yourdomain.com/ws}
+        - VITE_APP_VERSION=${VITE_APP_VERSION:-1.0.0}
+        # Add your custom build args here
+        # - VITE_YOUR_CUSTOM_VAR=${VITE_YOUR_CUSTOM_VAR:-prod-value}
+      target: production
+
+    container_name: {{PROJECT_NAME}}-prod-test
+
+    # Production test runs on port 8080 (nginx)
+    # Change left side if 8080 is already in use
+    ports:
+      - "8080:8080"
+
+    # Only run when explicitly called
+    profiles:
+      - production
+
+    # Simple restart policy
+    restart: unless-stopped
+
+    # Health check for nginx
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+
+# =============================================================================
+# Usage Examples:
+# =============================================================================
+#
+# Start development environment:
+#   docker-compose up dev
+#   OR: npm run dev:docker
+#
+# Stop development environment:
+#   docker-compose down
+#   OR: npm run dev:stop
+#
+# Test production build locally:
+#   docker-compose --profile production up prod-test
+#   OR: npm run prod:test
+#
+# Add a new package:
+#   docker-compose run --rm dev npm add package-name
+#   OR: npm run docker:add package-name
+#
+# Clean everything:
+#   docker-compose down -v && docker system prune -f
+#   OR: npm run docker:clean
+#
+# =============================================================================

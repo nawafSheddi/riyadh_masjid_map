@@ -1,0 +1,294 @@
+# CLAUDE.md
+
+> **Claude Code Context File** - Automatically loaded when Claude Code starts a conversation.
+> **Last Updated**: {{LAST_UPDATED}} | **Version**: 1.0.0
+> This file provides core project context. Detailed procedures are in modular skills.
+
+## Project Overview
+
+**{{PROJECT_NAME}}** - {{PROJECT_DESCRIPTION}}
+
+<!-- Example: A mobile-first React application for [your use case] -->
+
+## Current Implementation Status
+
+### Project Phase
+- **Phase**: {{CURRENT_PHASE}} <!-- MVP, Beta, Production -->
+- **Language**: {{PRIMARY_LANGUAGE}} <!-- English, Arabic, Multi-language -->
+- **Design System**: {{DESIGN_SYSTEM_STATUS}} <!-- In Progress, Complete -->
+- **Key Features**: {{KEY_FEATURES}} <!-- List 3-5 main features -->
+
+### Tech Stack
+
+**Frontend**: React 18 + TypeScript + Vite + Tailwind CSS + Zustand
+**State Management**: Zustand
+**Routing**: React Router 7
+**Styling**: Tailwind CSS 3
+**Icons**: Lucide React
+**Deployment**: {{DEPLOYMENT_PLATFORM}} <!-- Cloudflare Pages, Vercel, Netlify -->
+
+<!-- If different tech stack chosen, update accordingly -->
+
+## Development Commands
+
+```bash
+npm install          # Install dependencies
+npm run dev          # Development server (port 5173)
+npm run build        # Production build
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+npm run typecheck    # TypeScript type checking
+
+# Docker commands (if using Docker)
+npm run dev:docker   # Start development in Docker
+npm run dev:stop     # Stop Docker containers
+npm run prod:test    # Test production build in Docker
+```
+
+## 🚨 CRITICAL GUIDELINES
+
+### 1. Git Operations - STRICTLY PROHIBITED
+**🚫 NO GIT COMMANDS ALLOWED**
+- Use skill: `git-operations-blocker` (global skill)
+- Git operations are USER-ONLY territory
+- AI can suggest commands but never execute
+- User controls all commits, pushes, and merges
+
+### 2. Task Management System
+**MANDATORY**: Every piece of work = One documented task
+- Primary system: `markdown-task-manager` skill
+- Files: `kanban.md` (active) + `archive.md` (completed)
+- Visual board: `task-manager.html`
+- Always reference TASK-XXX in commits
+
+### 3. Component Development Workflow
+
+#### Design System Compliance
+- **Skill**: `design-token-enforcer`
+- No hardcoded colors, use semantic tokens
+- Icons from `@/design-tokens/icons` only
+- Extract magic numbers to constants
+- Validate before committing
+
+#### Translation Management (if multi-language)
+- **Skill**: `react-translation-manager`
+- Add keys to ALL language objects
+- Pattern: `feature.section.element`
+- Prevents white screen errors from missing keys
+
+#### RTL Layout Validation (if supporting Arabic/Hebrew)
+- **Skill**: `react-rtl-layout-validator`
+- MANDATORY: `dir="rtl"` on containers + `text-right` on text
+- Validate all components before completion
+- Test with actual RTL content
+
+#### Pre-Implementation Validation
+- Run validation checklist before coding
+- Use `pre-commit-review` skill before commits
+- Total time: 3-4 minutes
+- Saves: 20-40 minutes debugging
+
+## Architecture Principles
+
+### Component-Driven Development
+- Atomic Design: atoms → molecules → organisms → templates → pages
+- Every UI element is a reusable component
+- Consistent props interface (size, variant, disabled)
+- TypeScript for all components
+
+### Design Tokens First
+- Colors: Semantic tokens only (bg-primary, text-accent)
+- Spacing: Documented token mappings
+- Typography: Defined variants (h1-h6, body, caption)
+- Icons: Centralized token system
+- NO hardcoded values
+
+### Constants Over Magic Numbers
+```typescript
+// ✅ Good
+import { VALIDATION_RULES, UI_LIMITS } from '@/constants';
+const maxLength = VALIDATION_RULES.MAX_LENGTH;
+
+// ❌ Bad
+const maxLength = 50;
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── ui/              # Design system components
+│   ├── molecules/       # Composed components
+│   ├── organisms/       # Complex components
+│   └── templates/       # Page layouts
+├── pages/               # Route components
+├── design-tokens/       # Colors, typography, spacing, icons
+├── contexts/            # React Context providers
+├── constants/           # Validation rules, UI thresholds
+├── hooks/               # Reusable logic
+├── lib/                 # Utility functions
+├── services/            # API calls
+└── stores/              # Zustand stores
+```
+
+## Component Library Quick Reference
+
+<!-- Update this list based on your actual components -->
+
+### Core Components
+- **Layout**: Card, Container
+- **Typography**: Typography, Heading, Paragraph
+- **Buttons**: Button, IconButton
+- **Inputs**: Input, Checkbox, Radio, Select
+- **Overlays**: Modal, Tooltip, Popover
+- **Navigation**: Tabs, Breadcrumb
+- **Feedback**: Badge, EmptyState, ErrorDisplay
+
+### Component Variants Reference
+| Component | Valid Variants |
+|-----------|---------------|
+| Badge | `default\|success\|warning\|error\|info` |
+| Button | `default\|secondary\|ghost\|outline` |
+| Typography | `h1-h6\|body\|body-small\|caption\|label` |
+
+<!-- Add more components as you build them -->
+
+## Skills Catalog
+
+### Project-Local Skills (`.claude/skills/`)
+- `markdown-task-manager` - Task tracking and documentation
+- `pre-commit-review` - Automated code review
+- `design-token-enforcer` - Design system compliance
+- `react-translation-manager` - Translation workflow (if multi-language)
+- `react-rtl-layout-validator` - RTL layout validation (if supporting RTL)
+- `skill-creator` - Create new skills
+
+### Global Skills (`~/.claude/skills/`)
+- `git-operations-blocker` - Prevent AI git operations
+- `decision-tree-formatter` - Structured recommendations
+
+## Error Prevention
+
+### Common Issues & Quick Fixes
+
+#### White Screen
+1. **ASK USER**: "Open browser console (F12) for errors"
+2. **WAIT** for console output
+3. **READ** error stack trace
+4. Common fixes:
+   - Missing translation keys → Add to translation files
+   - Undefined props → Add defensive checks
+   - Import errors → Check file paths
+
+#### TypeScript Build Errors
+```bash
+# Filter critical errors only
+npm run build 2>&1 | grep "error TS"
+```
+
+#### Design Token Violations
+```bash
+# Find hardcoded colors
+grep -r "bg-\(red\|blue\|green\)-[0-9]" src/
+
+# Find wrong icon imports
+grep -r "from 'lucide-react'" src/
+```
+
+## Quick Validation Commands
+
+```bash
+# Development
+npm run dev              # Start dev server
+npm run typecheck        # Check types
+npm run lint             # Check code quality
+
+# Production
+npm run build            # Production build
+npm run preview          # Test production build
+
+# Docker (if configured)
+npm run dev:docker       # Development in container
+npm run prod:test        # Production test in container
+```
+
+## Environment Configuration
+
+```env
+# Required environment variables
+VITE_API_URL={{API_URL}}                    # Backend API URL
+VITE_APP_VERSION=1.0.0                      # App version
+
+# Optional environment variables
+VITE_WEBSOCKET_URL={{WEBSOCKET_URL}}        # WebSocket URL (if using)
+VITE_DEFAULT_LANGUAGE={{DEFAULT_LANGUAGE}}  # Default language (en, ar, etc.)
+```
+
+See `.env.example` for all available environment variables.
+
+## Critical Implementation Notes
+
+1. **DESIGN TOKENS**: No hardcoded values, use semantic tokens
+2. **COMPONENTS**: Build as reusable, typed, documented
+3. **ERRORS**: Defensive programming for all optional props
+4. **VALIDATION**: Pre-commit review before all commits
+5. **TASKS**: Create task before starting any work
+
+<!-- Language-specific notes (uncomment if needed) -->
+<!--
+## Multi-Language Setup
+- **Active System**: react-i18next
+- **Translation Files**: `src/i18n/locales/{lang}.json`
+- **Pattern**: `feature.section.element`
+- **Required**: Keys must exist in ALL language files
+-->
+
+<!--
+## RTL Support
+- **Direction**: Fixed RTL for Arabic/Hebrew
+- **Container**: MUST have `dir="rtl"`
+- **Text**: MUST have `text-right`
+- **Numbers**: Use Western numerals (1234) not Arabic (١٢٣٤)
+-->
+
+## Decision Making
+
+When multiple valid options exist, use `decision-tree-formatter` skill to present structured recommendations with clear trade-offs.
+
+## Documentation References
+
+- **Style Guide**: `docs/style-guide.md`
+- **Tech Stack**: `docs/tech-stack.md`
+- **Component Library**: See skills for detailed references
+
+---
+
+## Customization Instructions
+
+**🔧 Before using this template**:
+
+1. **Replace all {{PLACEHOLDERS}}** with your project details:
+   - `{{PROJECT_NAME}}`: Your project name
+   - `{{PROJECT_DESCRIPTION}}`: Brief project description
+   - `{{CURRENT_PHASE}}`: MVP, Beta, or Production
+   - `{{PRIMARY_LANGUAGE}}`: en, ar, or multi-language
+   - `{{DESIGN_SYSTEM_STATUS}}`: Status of design system
+   - `{{KEY_FEATURES}}`: List 3-5 main features
+   - `{{DEPLOYMENT_PLATFORM}}`: Cloudflare Pages, Vercel, etc.
+   - `{{API_URL}}`: Your backend API URL
+   - `{{DEFAULT_LANGUAGE}}`: Default language code
+
+2. **Uncomment optional sections** if needed:
+   - Multi-Language Setup (if supporting multiple languages)
+   - RTL Support (if supporting Arabic/Hebrew)
+
+3. **Update Component Library** as you build components
+
+4. **Add project-specific guidelines** in their own sections
+
+5. **Remove this "Customization Instructions" section** after setup
+
+---
+
+**This optimized version keeps CLAUDE.md lean (~200-300 lines) while maintaining all critical information. Detailed procedures are in reusable skills.**

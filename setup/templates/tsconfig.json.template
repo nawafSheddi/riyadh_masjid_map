@@ -1,0 +1,85 @@
+{
+  "compilerOptions": {
+    // ===== COMPILATION TARGET =====
+    // Target ES2020 for modern JavaScript features
+    // Supports async/await, optional chaining, nullish coalescing
+    "target": "ES2020",
+
+    // Enable modern class field behavior (stage 3 proposal)
+    "useDefineForClassFields": true,
+
+    // Include ES2020 features and DOM APIs
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // ===== MODULE SYSTEM =====
+    // Use ESNext modules for best tree-shaking with Vite
+    "module": "ESNext",
+
+    // Use bundler resolution for Vite compatibility
+    // Allows importing .ts files directly without extensions
+    "moduleResolution": "bundler",
+
+    // Allow .ts/.tsx extensions in imports (Vite handles them)
+    "allowImportingTsExtensions": true,
+
+    // Allow importing JSON files as modules
+    "resolveJsonModule": true,
+
+    // ===== COMPILATION BEHAVIOR =====
+    // Each file is compiled independently (required for Vite)
+    "isolatedModules": true,
+
+    // Don't emit JS files (Vite handles bundling)
+    "noEmit": true,
+
+    // Skip type checking for .d.ts files (faster compilation)
+    "skipLibCheck": true,
+
+    // ===== JSX CONFIGURATION =====
+    // Use React 17+ JSX transform (no need to import React)
+    "jsx": "react-jsx",
+
+    // ===== TYPE CHECKING (STRICT MODE) =====
+    // Enable all strict type checking options
+    "strict": true,
+
+    // Warn on unused local variables (disabled during development)
+    // Enable in production builds for cleaner code
+    "noUnusedLocals": false,
+
+    // Warn on unused function parameters (disabled during development)
+    "noUnusedParameters": false,
+
+    // Error on switch statements without default or break
+    "noFallthroughCasesInSwitch": true,
+
+    // ===== MODULE INTEROP =====
+    // Allow default imports from CommonJS modules
+    "allowSyntheticDefaultImports": true,
+
+    // Enable CommonJS/ES module interoperability
+    "esModuleInterop": true,
+
+    // Enforce consistent file name casing
+    // Prevents issues when moving between case-sensitive/insensitive file systems
+    "forceConsistentCasingInFileNames": true,
+
+    // ===== PATH ALIASES =====
+    // Base URL for resolving non-relative module names
+    "baseUrl": "./src",
+
+    // Path mapping for clean imports
+    // Example: import { Button } from '@/components/ui/button'
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+
+  // ===== INCLUDED FILES =====
+  // Only compile files in src/ directory
+  "include": ["src"],
+
+  // ===== PROJECT REFERENCES =====
+  // Reference to Node.js config for build scripts
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

@@ -1,0 +1,164 @@
+import js from '@eslint/js';
+import tseslint from '@typescript-eslint/eslint-plugin';
+import tsparser from '@typescript-eslint/parser';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+
+// ESLint Flat Config (v9+)
+// See: https://eslint.org/docs/latest/use/configure/configuration-files
+export default [
+  // ===== IGNORE PATTERNS =====
+  {
+    // Files/folders to exclude from linting
+    ignores: [
+      'dist/**',           // Build output
+      'node_modules/**',   // Dependencies
+      'build/**',          // Alternative build folder
+      '*.config.js',       // Config files (if needed)
+      '*.config.ts',       // TypeScript config files (if needed)
+    ],
+  },
+
+  // ===== TYPESCRIPT + REACT CONFIGURATION =====
+  {
+    // Apply to all TypeScript files
+    files: ['**/*.{ts,tsx}'],
+
+    // Language parser configuration
+    languageOptions: {
+      parser: tsparser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true, // Enable JSX parsing
+        },
+      },
+    },
+
+    // Plugins
+    plugins: {
+      '@typescript-eslint': tseslint,
+      'react': react,
+      'react-hooks': reactHooks,
+    },
+
+    // Linting rules
+    rules: {
+      // ===== DESIGN TOKEN ENFORCEMENT =====
+      // Prevent direct icon imports (enforce design token usage)
+      'no-restricted-imports': [
+        'error',
+        {
+          paths: [
+            {
+              name: 'lucide-react',
+              message: 'Please import icons from \'@/design-tokens/icons\' instead of directly from \'lucide-react\' to maintain design system consistency.',
+              allowTypeImports: true, // Allow type imports
+            },
+          ],
+          patterns: [
+            {
+              group: ['lucide-react'],
+              message: 'Please import icons from \'@/design-tokens/icons\' instead of directly from \'lucide-react\'.',
+              allowTypeImports: true,
+            },
+          ],
+        },
+      ],
+
+      // ===== HARDCODED COLOR DETECTION =====
+      // Warn on hardcoded Tailwind color classes
+      // Encourages using semantic tokens (bg-background, text-foreground)
+      'no-restricted-syntax': [
+        'warn',
+        {
+          selector: 'Literal[value=/bg-(green|red|blue|yellow|purple|pink|indigo|gray)-(100|200|300|400|500|600|700|800|900)/]',
+          message: 'Avoid hardcoded color classes. Use semantic tokens instead: bg-status-live, bg-error, bg-success, bg-warning, bg-accent, bg-status-ended, bg-status-soon, bg-status-inactive.',
+        },
+        {
+          selector: 'Literal[value=/text-(green|red|blue|yellow|purple|pink|indigo|gray)-(100|200|300|400|500|600|700|800|900)/]',
+          message: 'Avoid hardcoded color classes. Use semantic tokens instead: text-status-live, text-error, text-success, text-warning, text-accent, text-foreground, text-placeholder.',
+        },
+        {
+          selector: 'Literal[value=/border-(green|red|blue|yellow|purple|pink|indigo|gray)-(100|200|300|400|500|600|700|800|900)/]',
+          message: 'Avoid hardcoded color classes. Use semantic tokens instead: border-error, border-success, border-warning, border-accent, border-border.',
+        },
+      ],
+
+      // ===== REACT HOOKS RULES =====
+      // Enforce rules of hooks (required)
+      'react-hooks/rules-of-hooks': 'error',
+
+      // Warn on missing dependencies in hooks
+      'react-hooks/exhaustive-deps': 'warn',
+
+      // ===== ADDITIONAL RULES (Uncomment as needed) =====
+
+      // TypeScript-specific
+      // '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      // '@typescript-eslint/explicit-function-return-type': 'off',
+      // '@typescript-eslint/no-explicit-any': 'warn',
+
+      // React-specific
+      // 'react/prop-types': 'off', // Not needed with TypeScript
+      // 'react/react-in-jsx-scope': 'off', // Not needed with React 17+
+      // 'react/display-name': 'off',
+
+      // General code quality
+      // 'no-console': ['warn', { allow: ['warn', 'error'] }],
+      // 'prefer-const': 'error',
+      // 'no-var': 'error',
+    },
+
+    // React version detection
+    settings: {
+      react: {
+        version: 'detect', // Automatically detect React version
+      },
+    },
+  },
+
+  // ===== EXCEPTIONS FOR SPECIFIC FILES =====
+  {
+    // Allow direct lucide-react imports in design token files
+    files: [
+      'src/design-tokens/icons.ts',
+      'src/components/ui/icon.tsx',
+    ],
+    rules: {
+      'no-restricted-imports': 'off',
+    },
+  },
+];
+
+// ===== USAGE NOTES =====
+//
+// 1. Run linting:
+//    npm run lint
+//
+// 2. Auto-fix issues:
+//    npm run lint -- --fix
+//
+// 3. VS Code integration:
+//    Install "ESLint" extension
+//    Add to .vscode/settings.json:
+//    {
+//      "eslint.experimental.useFlatConfig": true,
+//      "editor.codeActionsOnSave": {
+//        "source.fixAll.eslint": true
+//      }
+//    }
+//
+// 4. Pre-commit hooks (optional):
+//    npm install -D husky lint-staged
+//    npx husky init
+//    Add to package.json:
+//    "lint-staged": {
+//      "*.{ts,tsx}": "eslint --fix"
+//    }
+//
+// 5. Customize rules:
+//    - 'off': Disable rule
+//    - 'warn': Warning (doesn't fail build)
+//    - 'error': Error (fails build)

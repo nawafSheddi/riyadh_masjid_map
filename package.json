@@ -1,0 +1,70 @@
+{
+  "name": "masjid-map",
+  "version": "1.0.0",
+  "description": "Interactive map of masjids in Riyadh with reader information and audio samples",
+  "type": "module",
+  "author": "Nawaf",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "tailwind",
+    "maplibre",
+    "riyadh",
+    "masjid"
+  ],
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+
+    "dev:docker": "docker-compose -f docker-compose.yml up dev",
+    "dev:stop": "docker-compose -f docker-compose.yml down",
+    "dev:restart": "docker-compose -f docker-compose.yml down && docker-compose -f docker-compose.yml up dev",
+
+    "prod:test": "docker-compose -f docker-compose.yml --profile production up prod-test",
+    "prod:stop": "docker-compose -f docker-compose.yml down",
+
+    "docker:add": "docker-compose -f docker-compose.yml run --rm dev npm add",
+    "docker:install": "docker-compose -f docker-compose.yml run --rm dev npm install",
+    "docker:lint": "docker-compose -f docker-compose.yml run --rm dev npm run lint",
+    "docker:typecheck": "docker-compose -f docker-compose.yml run --rm dev tsc --noEmit",
+    "docker:build": "docker-compose -f docker-compose.yml run --rm dev npm run build",
+    "docker:clean": "docker-compose -f docker-compose.yml down -v && docker system prune -f"
+  },
+  "dependencies": {
+    "@radix-ui/react-switch": "^1.2.6",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "tailwind-merge": "^3.3.1",
+    "zustand": "^5.0.8",
+    "maplibre-gl": "^4.7.1",
+    "react-map-gl": "^7.1.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "@vitejs/plugin-react": "^5.0.3",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.37.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^6.1.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.6"
+  }
+}

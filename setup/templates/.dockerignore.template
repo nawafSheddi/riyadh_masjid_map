@@ -1,0 +1,243 @@
+# =============================================================================
+# Docker Build Context Exclusions
+# =============================================================================
+# Files/directories listed here are NOT sent to Docker daemon during build
+# This speeds up builds and prevents sensitive data leaks
+#
+# BEFORE USING:
+# - Review each section and add/remove based on your project
+# - Pay special attention to the SECRETS section
+# - Add any project-specific files that shouldn't be in Docker images
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# DEPENDENCIES (will be installed fresh in container)
+# -----------------------------------------------------------------------------
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+bower_components/
+
+# -----------------------------------------------------------------------------
+# BUILD OUTPUTS (will be generated during build)
+# -----------------------------------------------------------------------------
+dist/
+dist-ssr/
+build/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+out/
+
+# -----------------------------------------------------------------------------
+# VERSION CONTROL
+# -----------------------------------------------------------------------------
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+.svn/
+.hg/
+
+# -----------------------------------------------------------------------------
+# ENVIRONMENT & SECRETS (CRITICAL - prevent leaks!)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example          # Keep the example file
+!.env.template         # Keep template files
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+secrets/
+credentials/
+.credentials
+
+# Add your project-specific secret files here
+# config/production.json
+# keys/
+
+# -----------------------------------------------------------------------------
+# DOCKER FILES (prevent recursion)
+# -----------------------------------------------------------------------------
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+docker/
+
+# -----------------------------------------------------------------------------
+# DOCUMENTATION (not needed for build)
+# -----------------------------------------------------------------------------
+*.md
+!README.md             # Uncomment if you want README in image
+docs/
+documentation/
+LICENSE
+CHANGELOG*
+AUTHORS
+CONTRIBUTORS
+TODO*
+ROADMAP*
+
+# -----------------------------------------------------------------------------
+# IDE & EDITOR FILES
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+.project
+.classpath
+.settings/
+*.sublime-*
+.atom/
+.history/
+nbproject/
+
+# -----------------------------------------------------------------------------
+# CI/CD & AUTOMATION
+# -----------------------------------------------------------------------------
+.github/
+.gitlab/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+.jenkins/
+.drone.yml
+azure-pipelines.yml
+Jenkinsfile
+
+# -----------------------------------------------------------------------------
+# LOGS & DEBUG FILES
+# -----------------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm-debug.log*
+debug/
+*.tsbuildinfo
+
+# -----------------------------------------------------------------------------
+# TESTING & COVERAGE
+# -----------------------------------------------------------------------------
+coverage/
+.nyc_output/
+test-results/
+.jest/
+jest/
+cypress/videos/
+cypress/screenshots/
+__tests__/
+__mocks__/
+*.test.js
+*.test.ts
+*.test.jsx
+*.test.tsx
+*.spec.js
+*.spec.ts
+*.spec.jsx
+*.spec.tsx
+
+# -----------------------------------------------------------------------------
+# TEMPORARY FILES
+# -----------------------------------------------------------------------------
+temp/
+tmp/
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# -----------------------------------------------------------------------------
+# PROJECT MANAGEMENT & DOCUMENTATION
+# -----------------------------------------------------------------------------
+# Add your project-specific files here
+.claude/
+pre-commit-review/
+conversation_history/
+task-manager.html
+archive.md
+kanban.md
+CLAUDE.md
+AI_WORKFLOW.md
+.ai/
+
+# -----------------------------------------------------------------------------
+# OS-SPECIFIC FILES
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon\r
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# -----------------------------------------------------------------------------
+# PACKAGE MANAGER FILES (not needed, lock files are copied separately)
+# -----------------------------------------------------------------------------
+package-lock.json.backup
+yarn.lock.backup
+pnpm-lock.yaml.backup
+
+# -----------------------------------------------------------------------------
+# MISC & OTHER
+# -----------------------------------------------------------------------------
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+.cache
+.eslintcache
+.stylelintcache
+*.pid
+*.seed
+*.pid.lock
+
+# -----------------------------------------------------------------------------
+# CUSTOM EXCLUSIONS
+# -----------------------------------------------------------------------------
+# Add project-specific files/directories below
+# examples/
+# samples/
+# benchmarks/

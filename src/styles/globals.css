@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode (default) */
+    --color-background: #ffffff;
+    --color-background-card-dark: #f8f9fa;
+    --color-foreground: #1a1a1a;
+    --color-foreground-muted: #6b7280;
+    --color-foreground-muted-dark: #9ca3af;
+
+    --color-accent: #10b981;
+    --color-accent-dark: #059669;
+
+    --color-border: rgba(0, 0, 0, 0.1);
+    --color-disabled: rgba(0, 0, 0, 0.4);
+    --color-placeholder: #9ca3af;
+
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    --color-info: #3b82f6;
+
+    /* Region colors for map markers */
+    --color-region-north: #10b981;
+    --color-region-east: #3b82f6;
+    --color-region-west-south: #f59e0b;
+  }
+
+  [data-theme="dark"] {
+    /* Dark mode */
+    --color-background: #1a1a1a;
+    --color-background-card-dark: #2d2d2d;
+    --color-foreground: #ffffff;
+    --color-foreground-muted: #9ca3af;
+    --color-foreground-muted-dark: #6b7280;
+
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-disabled: rgba(255, 255, 255, 0.4);
+    --color-placeholder: #6b7280;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-cairo;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* RTL text alignment */
+  html[dir="rtl"] body {
+    @apply text-right;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
