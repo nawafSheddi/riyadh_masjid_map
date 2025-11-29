@@ -1,7 +1,8 @@
 /**
- * Design Tokens: Spacing
+ * Design Tokens: Spacing & Border Radius
  *
  * Consistent spacing scale based on mathematical rhythm.
+ * Generous rounded corners for the Ramadan night theme.
  */
 
 export const spacing = {
@@ -33,6 +34,15 @@ export const spacing = {
       padding: '16px',
       gap: '12px',
     },
+    bottomSheet: {
+      padding: '24px',
+      handleHeight: '4px',
+      handleWidth: '40px',
+    },
+    filterPill: {
+      padding: '8px 16px',
+      gap: '8px',
+    },
   },
 
   touch: {
@@ -40,3 +50,19 @@ export const spacing = {
     comfortable: '48px',
   },
 } as const
+
+/**
+ * Border Radius - Generous rounded corners
+ */
+export const radius = {
+  none: '0px',
+  sm: '8px',       // Small elements, badges
+  md: '12px',      // Buttons, inputs
+  lg: '16px',      // Cards
+  xl: '24px',      // Large cards, modals
+  '2xl': '32px',   // Bottom sheet
+  full: '9999px',  // Pills, avatars, circular elements
+} as const
+
+export type SpacingKey = keyof typeof spacing.base
+export type RadiusKey = keyof typeof radius

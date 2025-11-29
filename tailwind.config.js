@@ -15,25 +15,37 @@ export default {
       },
 
       colors: {
-        background: {
-          DEFAULT: "var(--color-background)",
-          cardDark: "var(--color-background-card-dark)",
-        },
-        foreground: {
-          DEFAULT: "var(--color-foreground)",
-          muted: "var(--color-foreground-muted)",
-          mutedDark: "var(--color-foreground-muted-dark)",
+        // Ramadan Night Theme - Backgrounds
+        night: {
+          deepest: "var(--color-night-deepest)",
+          deep: "var(--color-night-deep)",
+          medium: "var(--color-night-medium)",
+          soft: "var(--color-night-soft)",
         },
 
-        accent: {
-          DEFAULT: "var(--color-accent)",
-          dark: "var(--color-accent-dark)",
+        // Gold Accents
+        gold: {
+          DEFAULT: "var(--color-gold)",
+          bright: "var(--color-gold-bright)",
+          muted: "var(--color-gold-muted)",
+          glow: "var(--color-gold-glow)",
         },
 
-        border: "var(--color-border)",
-        disabled: "var(--color-disabled)",
-        placeholder: "var(--color-placeholder)",
+        // Text Colors
+        text: {
+          primary: "var(--color-text-primary)",
+          secondary: "var(--color-text-secondary)",
+          muted: "var(--color-text-muted)",
+        },
 
+        // Border Colors
+        border: {
+          DEFAULT: "var(--color-border)",
+          subtle: "var(--color-border-subtle)",
+          strong: "var(--color-border-strong)",
+        },
+
+        // Semantic Colors
         success: "var(--color-success)",
         warning: "var(--color-warning)",
         error: "var(--color-error)",
@@ -47,31 +59,66 @@ export default {
           westSouth: "var(--color-region-west-south)",
         },
 
+        // State colors
+        state: {
+          hover: "var(--color-state-hover)",
+          active: "var(--color-state-active)",
+          focus: "var(--color-state-focus)",
+          disabled: "var(--color-state-disabled)",
+        },
+
+        // Legacy compatibility
+        background: {
+          DEFAULT: "var(--color-background)",
+          cardDark: "var(--color-background-card-dark)",
+        },
+        foreground: {
+          DEFAULT: "var(--color-foreground)",
+          muted: "var(--color-foreground-muted)",
+          mutedDark: "var(--color-foreground-muted-dark)",
+        },
+        accent: {
+          DEFAULT: "var(--color-accent)",
+          dark: "var(--color-accent-dark)",
+        },
+        disabled: "var(--color-disabled)",
+        placeholder: "var(--color-placeholder)",
+
         // shadcn/ui compatibility
         primary: {
-          DEFAULT: "var(--color-foreground)",
-          foreground: "var(--color-accent)",
+          DEFAULT: "var(--color-gold)",
+          foreground: "var(--color-night-deepest)",
         },
         secondary: {
-          DEFAULT: "transparent",
-          foreground: "var(--color-foreground)",
+          DEFAULT: "var(--color-night-medium)",
+          foreground: "var(--color-text-primary)",
         },
         muted: {
-          DEFAULT: "var(--color-background)",
-          foreground: "var(--color-placeholder)",
+          DEFAULT: "var(--color-night-soft)",
+          foreground: "var(--color-text-muted)",
         },
         card: {
-          DEFAULT: "var(--color-background)",
-          foreground: "var(--color-foreground)",
+          DEFAULT: "var(--color-night-deep)",
+          foreground: "var(--color-text-primary)",
         },
         input: "var(--color-border)",
-        ring: "var(--color-foreground)",
+        ring: "var(--color-gold)",
       },
 
       borderRadius: {
-        lg: "12px",
-        md: "8px",
-        sm: "4px",
+        sm: "var(--radius-sm)",
+        md: "var(--radius-md)",
+        lg: "var(--radius-lg)",
+        xl: "var(--radius-xl)",
+        '2xl': "var(--radius-2xl)",
+      },
+
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        card: "var(--shadow-card)",
+        elevated: "var(--shadow-elevated)",
+        'glow-gold': "var(--shadow-glow-gold)",
+        'focus-gold': "var(--shadow-focus-gold)",
       },
 
       spacing: {

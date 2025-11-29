@@ -4,56 +4,88 @@
 
 @layer base {
   :root {
-    /* Light mode (default) */
-    --color-background: #ffffff;
-    --color-background-card-dark: #f8f9fa;
-    --color-foreground: #1a1a1a;
-    --color-foreground-muted: #6b7280;
-    --color-foreground-muted-dark: #9ca3af;
+    /* Ramadan Night Theme - Default dark theme */
 
-    --color-accent: #10b981;
-    --color-accent-dark: #059669;
+    /* Night Sky Backgrounds */
+    --color-night-deepest: #0a0f1a;
+    --color-night-deep: #0f172a;
+    --color-night-medium: #1e293b;
+    --color-night-soft: #334155;
 
-    --color-border: rgba(0, 0, 0, 0.1);
-    --color-disabled: rgba(0, 0, 0, 0.4);
-    --color-placeholder: #9ca3af;
+    /* Gold Accents */
+    --color-gold: #d4a853;
+    --color-gold-bright: #f5c869;
+    --color-gold-muted: #a68b3d;
+    --color-gold-glow: rgba(212, 168, 83, 0.2);
 
+    /* Text Colors */
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #64748b;
+
+    /* Border Colors */
+    --color-border-subtle: rgba(255, 255, 255, 0.08);
+    --color-border: rgba(255, 255, 255, 0.12);
+    --color-border-strong: rgba(255, 255, 255, 0.2);
+
+    /* Semantic Colors */
     --color-success: #10b981;
     --color-warning: #f59e0b;
     --color-error: #ef4444;
     --color-info: #3b82f6;
 
-    /* Region colors for map markers */
+    /* Region Colors */
     --color-region-north: #10b981;
     --color-region-east: #3b82f6;
     --color-region-west-south: #f59e0b;
-  }
 
-  [data-theme="dark"] {
-    /* Dark mode */
-    --color-background: #1a1a1a;
-    --color-background-card-dark: #2d2d2d;
-    --color-foreground: #ffffff;
-    --color-foreground-muted: #9ca3af;
-    --color-foreground-muted-dark: #6b7280;
+    /* State Colors */
+    --color-state-hover: rgba(255, 255, 255, 0.05);
+    --color-state-active: rgba(255, 255, 255, 0.1);
+    --color-state-focus: rgba(212, 168, 83, 0.3);
+    --color-state-disabled: rgba(255, 255, 255, 0.3);
 
-    --color-border: rgba(255, 255, 255, 0.1);
-    --color-disabled: rgba(255, 255, 255, 0.4);
-    --color-placeholder: #6b7280;
+    /* Shadows */
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-elevated: 0 12px 48px rgba(0, 0, 0, 0.6);
+    --shadow-glow-gold: 0 0 20px rgba(212, 168, 83, 0.3);
+    --shadow-focus-gold: 0 0 0 3px rgba(212, 168, 83, 0.3);
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-2xl: 32px;
+    --radius-full: 9999px;
+
+    /* Legacy compatibility mappings */
+    --color-background: var(--color-night-deepest);
+    --color-background-card-dark: var(--color-night-deep);
+    --color-foreground: var(--color-text-primary);
+    --color-foreground-muted: var(--color-text-secondary);
+    --color-foreground-muted-dark: var(--color-text-muted);
+    --color-accent: var(--color-gold);
+    --color-accent-dark: var(--color-gold-muted);
+    --color-disabled: var(--color-state-disabled);
+    --color-placeholder: var(--color-text-muted);
   }
 
   * {
-    @apply border-border;
+    border-color: var(--color-border);
   }
 
   body {
-    @apply bg-background text-foreground font-cairo;
+    background-color: var(--color-night-deepest);
+    color: var(--color-text-primary);
+    font-family: 'Cairo', sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   /* RTL text alignment */
   html[dir="rtl"] body {
-    @apply text-right;
+    text-align: right;
   }
 }
 
@@ -65,5 +97,16 @@
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Gold glow effect for interactive elements */
+  .glow-gold {
+    box-shadow: var(--shadow-glow-gold);
+  }
+
+  /* Focus ring utilities */
+  .focus-gold {
+    @apply outline-none;
+    box-shadow: var(--shadow-focus-gold);
   }
 }
