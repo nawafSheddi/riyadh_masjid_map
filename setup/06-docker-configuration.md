@@ -168,7 +168,7 @@ COPY . .
 EXPOSE 5173
 
 # Start dev server with --host flag (allows external access from Docker host)
-CMD ["npm", "run", "dev", "--", "--host"]
+CMD ["npm", "run", "dev:local", "--", "--host"]
 ```
 
 ### Development vs Production
@@ -293,9 +293,8 @@ Create `docker-compose.yml` in your project root:
 # Simplified version optimized for solo developer workflow
 #
 # Usage:
-#   Start dev:    docker-compose up dev
-#   Stop dev:     docker-compose down
-#   Or use npm:   npm run dev:docker
+#   Start dev:    npm run dev (or: docker-compose up dev)
+#   Stop dev:     npm run dev:stop (or: docker-compose down)
 # =============================================================================
 
 version: '3.8'
@@ -334,7 +333,7 @@ services:
       - /app/dist
 
     # Command to start Vite dev server
-    command: npm run dev -- --host
+    command: npm run dev:local -- --host
 
     # Auto-restart if it crashes
     restart: unless-stopped
@@ -386,7 +385,7 @@ services:
 # =============================================================================
 #
 # 1. DAILY WORKFLOW:
-#    Morning:  npm run dev:docker
+#    Morning:  npm run dev
 #    Evening:  docker-compose down (or Ctrl+C if running in foreground)
 #
 # 2. ADDING PACKAGES:
@@ -558,27 +557,29 @@ Desktop.ini
 
 ## Step 6: Add Docker Scripts to package.json
 
-Update your `package.json` to include Docker helper scripts:
+Update your `package.json` to include Docker scripts as defaults:
 
 ```json
 {
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-
-    "dev:docker": "docker-compose up dev",
+    "dev": "docker-compose up dev",
     "dev:stop": "docker-compose down",
     "dev:restart": "docker-compose down && docker-compose up dev",
+    "build": "docker-compose run --rm dev npm run build:local",
+    "lint": "docker-compose run --rm dev npm run lint:local",
+    "typecheck": "docker-compose run --rm dev tsc --noEmit",
+
+    "dev:local": "vite",
+    "build:local": "tsc && vite build",
+    "preview:local": "vite preview",
+    "lint:local": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "typecheck:local": "tsc --noEmit",
 
     "prod:test": "docker-compose --profile production up prod-test",
     "prod:stop": "docker-compose down",
 
     "docker:add": "docker-compose run --rm dev npm add",
     "docker:install": "docker-compose run --rm dev npm install",
-    "docker:lint": "docker-compose run --rm dev npm run lint",
-    "docker:typecheck": "docker-compose run --rm dev tsc --noEmit",
-    "docker:build": "docker-compose run --rm dev npm run build",
     "docker:clean": "docker-compose down -v && docker system prune -f"
   }
 }
@@ -588,13 +589,18 @@ Update your `package.json` to include Docker helper scripts:
 
 | Script | Purpose | Usage Example |
 |--------|---------|---------------|
-| `dev:docker` | Start dev environment | `npm run dev:docker` |
+| `dev` | Start dev environment (Docker) | `npm run dev` |
 | `dev:stop` | Stop dev environment | `npm run dev:stop` |
 | `dev:restart` | Restart after config changes | `npm run dev:restart` |
+| `build` | Production build (Docker) | `npm run build` |
+| `lint` | Run ESLint (Docker) | `npm run lint` |
+| `typecheck` | TypeScript checking (Docker) | `npm run typecheck` |
 | `prod:test` | Test production build locally | `npm run prod:test` |
 | `docker:add` | Install new package | `npm run docker:add axios` |
 | `docker:install` | Reinstall all packages | `npm run docker:install` |
 | `docker:clean` | Remove all containers/volumes | `npm run docker:clean` |
+
+> **Note**: Local (non-Docker) commands are available with the `:local` suffix (e.g., `npm run dev:local`) but Docker is the recommended approach.
 
 ---
 
@@ -603,8 +609,8 @@ Update your `package.json` to include Docker helper scripts:
 ### Test Development Environment
 
 ```bash
-# Start dev server in Docker
-npm run dev:docker
+# Start dev server
+npm run dev
 
 # Visit http://localhost:5173
 # Make a change to a component - should hot-reload
@@ -642,7 +648,7 @@ docker-compose run --rm dev npm list axios
 
 ```bash
 # Morning - Start dev environment
-npm run dev:docker
+npm run dev
 
 # Work normally - changes auto-reload
 # Edit files, see changes instantly
@@ -678,7 +684,7 @@ npm run prod:stop
 ```bash
 # Clean everything and start fresh
 npm run docker:clean
-npm run dev:docker
+npm run dev
 
 # View container logs
 docker-compose logs -f dev
@@ -850,7 +856,7 @@ npm run dev:docker
 ```bash
 # Rebuild container
 docker-compose build --no-cache dev
-npm run dev:docker
+npm run dev
 ```
 
 ### Problem: Slow Performance on macOS
@@ -921,9 +927,14 @@ After completing Docker setup:
 
 ```bash
 # Development
-npm run dev:docker           # Start dev environment
+npm run dev                  # Start dev environment
 npm run dev:stop             # Stop dev environment
 npm run dev:restart          # Restart dev environment
+
+# Build & Validation
+npm run build                # Production build
+npm run lint                 # Run ESLint
+npm run typecheck            # TypeScript checking
 
 # Production Testing
 npm run prod:test            # Test production build

@@ -21,7 +21,7 @@ services:
       - /app/node_modules
       - /app/dist
 
-    command: npm run dev -- --host
+    command: npm run dev:local -- --host
 
     restart: unless-stopped
 

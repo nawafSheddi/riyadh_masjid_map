@@ -28,18 +28,28 @@
 
 ## Development Commands
 
-```bash
-npm install          # Install dependencies
-npm run dev          # Development server (port 5173)
-npm run build        # Production build
-npm run preview      # Preview production build
-npm run lint         # Run ESLint
-npm run typecheck    # TypeScript type checking
+**Requires Docker Desktop**
 
-# Docker commands
-npm run dev:docker   # Start development in Docker
-npm run dev:stop     # Stop Docker containers
-npm run prod:test    # Test production build in Docker
+```bash
+npm run dev          # Start development server (Docker, port 5173)
+npm run dev:stop     # Stop development containers
+npm run dev:restart  # Restart development containers
+npm run build        # Production build (Docker)
+npm run lint         # Run ESLint (Docker)
+npm run typecheck    # TypeScript type checking (Docker)
+npm run prod:test    # Test production build (Docker, port 8080)
+
+# Package management
+npm run docker:add <package>   # Add a package
+npm run docker:install         # Reinstall dependencies
+npm run docker:clean           # Clean Docker resources
+```
+
+**Direct Docker commands** (alternative):
+```bash
+docker-compose up dev          # Start dev server
+docker-compose down            # Stop containers
+docker-compose run --rm dev npm add <package>  # Add package
 ```
 
 ## CRITICAL GUIDELINES
@@ -163,10 +173,10 @@ interface Masjid {
 ## Quick Validation Commands
 
 ```bash
-npm run dev              # Start dev server
-npm run typecheck        # Check types
-npm run lint             # Check code quality
-npm run build            # Production build
+npm run dev              # Start dev server (Docker)
+npm run typecheck        # Check types (Docker)
+npm run lint             # Check code quality (Docker)
+npm run build            # Production build (Docker)
 ```
 
 ## Environment Configuration
