@@ -1,0 +1,964 @@
+[
+  {
+    "index": 0,
+    "reader": "أحمد السويلم",
+    "method": "plus_code",
+    "plus_code": "QJ79+83X"
+  },
+  {
+    "index": 1,
+    "reader": "عبدالرحمن الماجد",
+    "method": "@coords",
+    "lat": 24.7907117,
+    "lng": 46.5986755
+  },
+  {
+    "index": 2,
+    "reader": "أحمد العبيدي",
+    "method": "none",
+    "q": "",
+    "ftid": ""
+  },
+  {
+    "index": 3,
+    "reader": "سامي السلمي",
+    "method": "@coords",
+    "lat": 24.8369832,
+    "lng": 46.5941099
+  },
+  {
+    "index": 4,
+    "reader": "ظُفر القليب",
+    "method": "none",
+    "q": "جامع حصة الراجحي رحمها الله، القيروان، الرياض 13533",
+    "ftid": "0x3e2ee6509f0e52cb:0xc78ea5217e0bbd7e"
+  },
+  {
+    "index": 5,
+    "reader": "ماجد الحازمي",
+    "method": "none",
+    "q": "جامع الشيخ محمد بن سعد بن ماجد المهنا، الأمير سعود بن عبدالله بن جلوي، القيروان، الرياض 13532",
+    "ftid": "0x3e2ee7884cb2f407:0xd1b2868560b57ef2"
+  },
+  {
+    "index": 6,
+    "reader": "عبدالله المشعل",
+    "method": "plus_code",
+    "plus_code": "QHXQ+P3Q"
+  },
+  {
+    "index": 7,
+    "reader": "عبدالله المنصور",
+    "method": "none",
+    "q": "جامع الشيخ سعد بن عبدالعزيز العجلان، 7815 شارع الأمير فيصل بن عبدالله بن عبدالرحمن، 3351، حطين، 3351",
+    "ftid": "0x3e2ee15d764d79e1:0x1542f51fc4966a7c"
+  },
+  {
+    "index": 8,
+    "reader": "إبراهيم الحيدري",
+    "method": "plus_code",
+    "plus_code": "QM5M+93F"
+  },
+  {
+    "index": 9,
+    "reader": "محمد العزوني",
+    "method": "none",
+    "q": "مسجد حصة الجريسي، 3852، الياسمين، 8284, الرياض 13322",
+    "ftid": "0x3e2ee4af754edcad:0xdf697b953e976909"
+  },
+  {
+    "index": 10,
+    "reader": "عبدالله الحسن",
+    "method": "plus_code",
+    "plus_code": "QMGV+9CG"
+  },
+  {
+    "index": 11,
+    "reader": "عبدالعزيز التميمي",
+    "method": "plus_code",
+    "plus_code": "VM32+357"
+  },
+  {
+    "index": 12,
+    "reader": "عبدالعزيز التركي",
+    "method": "plus_code",
+    "plus_code": "QMWH+953"
+  },
+  {
+    "index": 13,
+    "reader": "عبدالعزيز الوثلان",
+    "method": "none",
+    "q": "جامع محمد بن سليمان القاضي، الحارث بن عميرة، التعاون، الرياض 12477",
+    "ftid": "0x3e2efd15e90b81ad:0xe78a338096c755a"
+  },
+  {
+    "index": 14,
+    "reader": "عبدالرحمن الحسين",
+    "method": "plus_code",
+    "plus_code": "QMH4+H25"
+  },
+  {
+    "index": 15,
+    "reader": "عبدالعزيز عسيري",
+    "method": "plus_code",
+    "plus_code": "PJW2+7PP"
+  },
+  {
+    "index": 16,
+    "reader": "إبراهيم عسيري",
+    "method": "none",
+    "q": "جامع الشيخ بدر صالح الراجحي رحمه الله، ملقا السولدير، الملقا، 7519 طريق الأمير تركي بن عبدالعزيز الأ",
+    "ftid": "0x3e2ee7c2d6ed6851:0xc9466bab939970c5"
+  },
+  {
+    "index": 17,
+    "reader": "علي الحازمي",
+    "method": "none",
+    "q": "المسجد الجامع بسكن أعضاء هيئة التدريس والموظفين بجامعة الملك سعود.، 3558، 7248، جامعة الملك سعود، ال",
+    "ftid": "0x3e2f1d9b742c2eb7:0x4f2c55844de75190"
+  },
+  {
+    "index": 18,
+    "reader": "عبدالعزيز الدمخ",
+    "method": "plus_code",
+    "plus_code": "QPR8+FJ8"
+  },
+  {
+    "index": 19,
+    "reader": "طارق المحيسني",
+    "method": "plus_code",
+    "plus_code": "VJMM+V3P"
+  },
+  {
+    "index": 20,
+    "reader": "إبراهيم الشطيري",
+    "method": "none",
+    "q": "جامع عبدالرحمن الرومي، عمرو بن عتاب، حي الملك سلمان، الرياض 12444",
+    "ftid": "0x3e2f02612ed0a7c3:0x51e7ca08c8b355ea"
+  },
+  {
+    "index": 21,
+    "reader": "سعود الحمدان",
+    "method": "none",
+    "q": "مسجد مصعب بن عمير، 7751 المغيرة بن شعبة، 3085، الملك فهد, 7729، الرياض 12274",
+    "ftid": "0x3e2ee2ab1ee83f01:0x3b3e1c55aceceaef"
+  },
+  {
+    "index": 22,
+    "reader": "عبدالله الموسى",
+    "method": "plus_code",
+    "plus_code": "RPWP+QP3"
+  },
+  {
+    "index": 23,
+    "reader": "عبدالإله بن عون",
+    "method": "plus_code",
+    "plus_code": "QHG9+FR6"
+  },
+  {
+    "index": 24,
+    "reader": "خالد العبودي",
+    "method": "plus_code",
+    "plus_code": "MMMJ+3Q3"
+  },
+  {
+    "index": 25,
+    "reader": "زياد النشوان",
+    "method": "plus_code",
+    "plus_code": "QMW5+RQX"
+  },
+  {
+    "index": 26,
+    "reader": "ياسر الخميس",
+    "method": "plus_code",
+    "plus_code": "RMHP+Q27"
+  },
+  {
+    "index": 27,
+    "reader": "أحمد العبيدان",
+    "method": "none",
+    "q": "جامع عبدالله بن علي بن علي المهيدب، حي النرجس، 3852 ريحانه بنت زيد RAJI3852 6576، الرياض 13343",
+    "ftid": "0x3e2eef007fe16e89:0x81dd87c6e6f476d9"
+  },
+  {
+    "index": 28,
+    "reader": "محمد المضيان",
+    "method": "none",
+    "q": "جامع الغدير، جامع حي الغدير، الغدير، الرياض 13311",
+    "ftid": "0x3e2ee31dc6960447:0x70ab4bf9683d6deb"
+  },
+  {
+    "index": 29,
+    "reader": "محمد اليحيى",
+    "method": "plus_code",
+    "plus_code": "RHGG+4JC"
+  },
+  {
+    "index": 30,
+    "reader": "فهد الكثيري",
+    "method": "none",
+    "q": "جامع الحميدان، 8058 مقاتل بن سليمان، القيروان، الرياض 13531 3606،",
+    "ftid": "0x3e2ee5d324b21ff5:0x8a6ce2449056d318"
+  },
+  {
+    "index": 31,
+    "reader": "مهنا المهنا",
+    "method": "none",
+    "q": "مسجد دليّل آل الشيخ، سليمان السحيمي، القيروان، الرياض 13532",
+    "ftid": "0x3e2ee66167b820d3:0x251e86623e912eb2"
+  },
+  {
+    "index": 32,
+    "reader": "عبدالرحمن السويدان",
+    "method": "none",
+    "q": "مسجد أنس بن مالك، 4417، 7087، الياسمين، 7087، الرياض 13326",
+    "ftid": "0x3e2ee4ba2535f0b3:0xeb9c8f649b9bf95"
+  },
+  {
+    "index": 33,
+    "reader": "سند الضويلع",
+    "method": "plus_code",
+    "plus_code": "RJH4+9X4"
+  },
+  {
+    "index": 34,
+    "reader": "ناصر السليم",
+    "method": "plus_code",
+    "plus_code": "RJH4+9X4"
+  },
+  {
+    "index": 35,
+    "reader": "صابر عبدالحكم",
+    "method": "none",
+    "q": "جامع الأميرة لطيفة بنت سلطان بن عبد العزيز، 3185 شارع التخصصي، حي الرحمانية، 7633، الرياض 12343",
+    "ftid": "0x3e2f1d387f0aa221:0x9dd8ffe4e4e3a6c5"
+  },
+  {
+    "index": 36,
+    "reader": "محمد الجليل",
+    "method": "plus_code",
+    "plus_code": "PJ92+3JG"
+  },
+  {
+    "index": 37,
+    "reader": "فهد العبدالعزيز",
+    "method": "plus_code",
+    "plus_code": "QHJM+WFQ"
+  },
+  {
+    "index": 38,
+    "reader": "زيد السلمي",
+    "method": "plus_code",
+    "plus_code": "QMP3+5P3"
+  },
+  {
+    "index": 39,
+    "reader": "مشاري الفهيد",
+    "method": "none",
+    "q": "مسجد الشيخ عثمان بن بشر - العلامة و المؤرخ، ابن شريم، المرسلات، الرياض 12461",
+    "ftid": "0x3e2f02a3404116af:0x8471a7349dd99cdd"
+  },
+  {
+    "index": 40,
+    "reader": "إبراهيم الدوسري",
+    "method": "none",
+    "q": "جامع الملك عبدالله بن عبدالعزيز، 6218 طريق العروبة، حي الرحمانية، 2898، الرياض 12342",
+    "ftid": "0x3e2f1d23835c2d67:0xdf90e5d831eb3604"
+  },
+  {
+    "index": 41,
+    "reader": "أحمد الجبير",
+    "method": "none",
+    "q": "جامع محمد بن زيد الزامل، 8021 الرستاق، النخيل، الرياض 12392",
+    "ftid": "0x3e2ee23facd449dd:0xd1a2eea3812c558c"
+  },
+  {
+    "index": 42,
+    "reader": "سلطان العمري",
+    "method": "plus_code",
+    "plus_code": "QJ54+4MX"
+  },
+  {
+    "index": 43,
+    "reader": "نايف السالم",
+    "method": "plus_code",
+    "plus_code": "PHVW+C7P"
+  },
+  {
+    "index": 44,
+    "reader": "عبدالرحمن السويد",
+    "method": "none",
+    "q": "مسجد المزيعل، 2834 رقم 385، حي الملقا، RRMD7079، 7079، الرياض 13524",
+    "ftid": "0x3e2ee55df5deba67:0x7364b801609e8b72"
+  },
+  {
+    "index": 45,
+    "reader": "عبدالعزيز العويرضي",
+    "method": "none",
+    "q": "مسجد هيله العبودي رحمها الله, RADB2428, 7699 رقم 78, حي الندى, 2428، الرياض 13317",
+    "ftid": "0x3e2efd006fd29bc1:0xe77a3d3620c7fb19"
+  },
+  {
+    "index": 46,
+    "reader": "سعد الدويس",
+    "method": "plus_code",
+    "plus_code": "RJJC+7M4"
+  },
+  {
+    "index": 47,
+    "reader": "أسامة عطران",
+    "method": "plus_code",
+    "plus_code": "RM67+RRP"
+  },
+  {
+    "index": 48,
+    "reader": "سلطان المسعري",
+    "method": "plus_code",
+    "plus_code": "QMMQ+8R7"
+  },
+  {
+    "index": 49,
+    "reader": "عبدالعزيز الخنين",
+    "method": "plus_code",
+    "plus_code": "RJJ4+7M3"
+  },
+  {
+    "index": 50,
+    "reader": "سعد التوم",
+    "method": "none",
+    "q": "جامع عبدالله الهداب، 4542 طريق الملك عبدالعزيز، 13315، الربيع،، الرياض 13315،",
+    "ftid": "0x3e2ee3393014bed7:0x76b4bdf8b62f733e"
+  },
+  {
+    "index": 51,
+    "reader": "عاصم عقيل",
+    "method": "plus_code",
+    "plus_code": "QM5Q+QF9"
+  },
+  {
+    "index": 52,
+    "reader": "عبدالمحسن العسكر",
+    "method": "plus_code",
+    "plus_code": "PJXX+3HF"
+  },
+  {
+    "index": 53,
+    "reader": "ريان الدوسري",
+    "method": "none",
+    "q": "جامع سليمان بن عبدالله اليحيا، 2444 محمد المقدمي، 7078، النفل, 7078، الرياض 13312",
+    "ftid": "0x3e2ee329c1fe037f:0x9bce239f05ee3e1"
+  },
+  {
+    "index": 54,
+    "reader": "عبدالله العليان",
+    "method": "none",
+    "q": "مسجد سيد الشهداء، الظهرة، غرناطة، الرياض 13241",
+    "ftid": "0x3e2efdc430101e7f:0xdd184b63fc340ac"
+  },
+  {
+    "index": 55,
+    "reader": "عبدالعزيز م الأحمد",
+    "method": "none",
+    "q": "جامع سليمان عبدالعزيز البسام، قرطبة، الرياض 13248",
+    "ftid": "0x3e2efc13a8182c21:0xb5dbd15fb00ada59"
+  },
+  {
+    "index": 56,
+    "reader": "محمد اللحيدان",
+    "method": "plus_code",
+    "plus_code": "PQRW+C94"
+  },
+  {
+    "index": 57,
+    "reader": "عاصم اللحيدان",
+    "method": "plus_code",
+    "plus_code": "PR55+JH8"
+  },
+  {
+    "index": 58,
+    "reader": "عبدالله الحمّيد",
+    "method": "none",
+    "q": "جامع اللحيدان، الملك فيصل، حي, الرياض",
+    "ftid": "0x3e2f01bb983d36a1:0x3c0b45d8119d94ab"
+  },
+  {
+    "index": 59,
+    "reader": "عبدالملك المسعود",
+    "method": "none",
+    "q": "جامع إمام الدعوة الإمام محمد بن عبدالوهاب، شارع عبد الرحمن بن عوف،، السلام، الرياض 14227",
+    "ftid": "0x3e2f075980e290ab:0xb2e493135b21930b"
+  },
+  {
+    "index": 60,
+    "reader": "عبدالملك الراجح",
+    "method": "plus_code",
+    "plus_code": "PPJR+XW7"
+  },
+  {
+    "index": 61,
+    "reader": "ناصر العصفور وحمزة الطيار",
+    "method": "none",
+    "q": "جامع الراجحي، 7084 Al Akheyar, Al Jazirah Riyadh 14251 2229 الأخيار الجزيرة الرياض 14251، الرياض 142",
+    "ftid": "0x3e2f06e4d1767b21:0x99a4c168bef00ea0"
+  },
+  {
+    "index": 62,
+    "reader": "طاهر الصميلي",
+    "method": "none",
+    "q": "جامع سلطان بن عبداللطيف البابطين رحمه الله، WRC6 6G8، ضاحية المطار،، الرمال، الرياض 13437",
+    "ftid": "0x3e2ef86ec6035ee7:0x302ed8b14e10ab08"
+  },
+  {
+    "index": 63,
+    "reader": "بدر الألمعي",
+    "method": "none",
+    "q": "جامع الخضير، 3218 طريق الدمام الفرعي، المونسية، الرياض 13253",
+    "ftid": "0x3e2efe56f89a8c5b:0xaa3e2ea44343e375"
+  },
+  {
+    "index": 64,
+    "reader": "نايف الجاسر",
+    "method": "none",
+    "q": "جامع صالح بن علي الصقري لوالديه، 7387 طريق الشيخ حسن بن حسين بن علي الفرعي، المونسية، الرياض 13249",
+    "ftid": "0x3e2efc03304c551d:0x7371e0a4d0893ed8"
+  },
+  {
+    "index": 65,
+    "reader": "عبدالعزيز الدسيماني",
+    "method": "none",
+    "q": "جامع الراجحي، 4842 ابي عبدالله الهمذاني، حي الصفا، 8454، الرياض 12853",
+    "ftid": "0x3e2f06effe84644f:0xc705ab5ff4ef1698"
+  },
+  {
+    "index": 66,
+    "reader": "عبدالعزيز الجريسي",
+    "method": "plus_code",
+    "plus_code": "MQJR+RQR"
+  },
+  {
+    "index": 67,
+    "reader": "عبدالرحمن العوّيد",
+    "method": "none",
+    "q": "مسجد سليمان الجوير، 3546، الجزيرة، 7013, الرياض 14251",
+    "ftid": "0x3e2f070696b7805d:0x54a25102613b61c9"
+  },
+  {
+    "index": 68,
+    "reader": "يوسف السعيد",
+    "method": "plus_code",
+    "plus_code": "RPMR+926"
+  },
+  {
+    "index": 69,
+    "reader": "بندر الجميعة",
+    "method": "plus_code",
+    "plus_code": "MRC4+64R"
+  },
+  {
+    "index": 70,
+    "reader": "هادي آل عسكر",
+    "method": "plus_code",
+    "plus_code": "RP4R+3WP"
+  },
+  {
+    "index": 71,
+    "reader": "مالك العبدالمنعم",
+    "method": "plus_code",
+    "plus_code": "MQQQ+G6X"
+  },
+  {
+    "index": 72,
+    "reader": "محمد القاسم",
+    "method": "plus_code",
+    "plus_code": "MQMV+8G9"
+  },
+  {
+    "index": 73,
+    "reader": "إسماعيل المقحم",
+    "method": "plus_code",
+    "plus_code": "MQRC+VGM"
+  },
+  {
+    "index": 74,
+    "reader": "عمير شميم",
+    "method": "none",
+    "q": "مسجد الفاضل، 6533 ابي الفضل العليمي، 3782، حي الربوة، الرياض 12823",
+    "ftid": "0x3e2f06b6cda55555:0x74a105f1f9443e57"
+  },
+  {
+    "index": 75,
+    "reader": "سلمان العتيبي",
+    "method": "plus_code",
+    "plus_code": "RQ47+8RP"
+  },
+  {
+    "index": 76,
+    "reader": "علي النجيدي",
+    "method": "none",
+    "q": "جامع الشيخ عبدالقادر شيبة الحمد، 2698 الأشقر، 7504، الجزيرة، الرياض 14251",
+    "ftid": "0x3e2f06e2f16ff221:0xaafe6fbb4d9d2a72"
+  },
+  {
+    "index": 77,
+    "reader": "عبدالملك السالم",
+    "method": "plus_code",
+    "plus_code": "PQ8C+GX6"
+  },
+  {
+    "index": 78,
+    "reader": "عبدالعزيز المقبل",
+    "method": "plus_code",
+    "plus_code": "RQ8R+P53"
+  },
+  {
+    "index": 79,
+    "reader": "نجيب الصبي",
+    "method": "plus_code",
+    "plus_code": "QQM2+WWG"
+  },
+  {
+    "index": 80,
+    "reader": "فهد السديس",
+    "method": "plus_code",
+    "plus_code": "PRF7+W6C"
+  },
+  {
+    "index": 81,
+    "reader": "عبدالرحمن العمري",
+    "method": "none",
+    "q": "جامِع طَارق بن عَبدالرّحمـٰن مُرَاد | حي الضباط، 7862 ابي برزة الاسلمي، 4478، الضباط، الرياض 12623",
+    "ftid": "0x3e2f04740507a61f:0xd133758c0554a372"
+  },
+  {
+    "index": 82,
+    "reader": "عبدالعزيز القرني",
+    "method": "plus_code",
+    "plus_code": "PQ4F+W77"
+  },
+  {
+    "index": 83,
+    "reader": "عبدالملك العمري",
+    "method": "none",
+    "q": "جامع الدخيًل، 7539 النقيب، حي الفيحاء، 2848، الرياض 14253",
+    "ftid": "0x3e2f070c91514921:0xd7547e29810f23a4"
+  },
+  {
+    "index": 84,
+    "reader": "عبدالله العمار",
+    "method": "none",
+    "q": "مسجد روضة الصالحين، 6693 رقم 5، 2463، الجزيرة، الرياض 14251",
+    "ftid": "0x3e2f06fc03c55555:0xa4646fc7d82e2a25"
+  },
+  {
+    "index": 85,
+    "reader": "خالد الجميعة",
+    "method": "plus_code",
+    "plus_code": "QPHW+MG9"
+  },
+  {
+    "index": 86,
+    "reader": "محمد الحافي",
+    "method": "none",
+    "q": "جامع لطيفة آل الشيخ، 8081 القارجي، الحمراء، 3583,، الرياض 13217",
+    "ftid": "0x3e2efe17706e910b:0xf0368bd48ff33ada"
+  },
+  {
+    "index": 87,
+    "reader": "عبدالرحمن الرويلي",
+    "method": "none",
+    "q": "جامع حشمه بنت حوران بن حميد المهيد، حي, 6953 الشيخ خليفة بن حمد ال ثاني، الجنادرية، الرياض 13612 366",
+    "ftid": "0x3e2fab839a5bcd1b:0x8b69134ec1e63e28"
+  },
+  {
+    "index": 88,
+    "reader": "عبدالرحمن العنقري",
+    "method": "plus_code",
+    "plus_code": "PM6R+34C"
+  },
+  {
+    "index": 89,
+    "reader": "عبدالعزيز الفراج",
+    "method": "plus_code",
+    "plus_code": "PQ2F+HHV"
+  },
+  {
+    "index": 90,
+    "reader": "أنس الميمان",
+    "method": "none",
+    "q": "جامع والدة الشيخ هشام بن عبدالعزيز الموسى، 3202 الامير مقرن بن عبدالعزيز، 7243،، المغرزات،، الرياض 1",
+    "ftid": "0x3e2efdfeb5edb5af:0xeab7a69b7eb1f99b"
+  },
+  {
+    "index": 91,
+    "reader": "عبدالكريم الزغيبي",
+    "method": "plus_code",
+    "plus_code": "MRV7+M53"
+  },
+  {
+    "index": 92,
+    "reader": "وليد الشهري",
+    "method": "none",
+    "q": "جامع البدراني، احمد بن ميسر، قرطبة، الرياض 13248",
+    "ftid": "0x3e2efc23b3df2cb5:0x4243ad85ae3187de"
+  },
+  {
+    "index": 93,
+    "reader": "أنس الجعفري",
+    "method": "none",
+    "q": "جامع التوحيد، محمود بن ابي حامد، النسيم الشرقي، الرياض 14243",
+    "ftid": "0x3e2faa0f95015f41:0xc7f262b6ae016a09"
+  },
+  {
+    "index": 94,
+    "reader": "براك الشمري",
+    "method": "plus_code",
+    "plus_code": "PRW3+RHF"
+  },
+  {
+    "index": 95,
+    "reader": "مجاهد الدبيان",
+    "method": "plus_code",
+    "plus_code": "QP9W+3FW"
+  },
+  {
+    "index": 96,
+    "reader": "علي آل عسكر",
+    "method": "plus_code",
+    "plus_code": "RP9C+4GW"
+  },
+  {
+    "index": 97,
+    "reader": "عبدالعزيز الفريج",
+    "method": "none",
+    "q": "مسجد ابن ثنيان، عثمان الكوفي، عليشة، الرياض 12743",
+    "ftid": "0x3e2f0520a8dbe445:0x5b96f1c8342b253c"
+  },
+  {
+    "index": 98,
+    "reader": "بدر البدر",
+    "method": "plus_code",
+    "plus_code": "MQPX+5F9"
+  },
+  {
+    "index": 99,
+    "reader": "عثمان الأنصاري",
+    "method": "plus_code",
+    "plus_code": "PQ38+MQ4"
+  },
+  {
+    "index": 100,
+    "reader": "معاذ المطلق",
+    "method": "plus_code",
+    "plus_code": "MRM2+XPC"
+  },
+  {
+    "index": 101,
+    "reader": "عبدالرحمن السلمي",
+    "method": "plus_code",
+    "plus_code": "PQPQ+HGH"
+  },
+  {
+    "index": 102,
+    "reader": "أحمد الشهري",
+    "method": "plus_code",
+    "plus_code": "RRG3+W43"
+  },
+  {
+    "index": 103,
+    "reader": "عبدالحكيم العبود",
+    "method": "none",
+    "q": "جامع طيبة، 6421 محمد بن صالح، 3297، الروابي، الرياض 14215",
+    "ftid": "0x3e2f06e20b6c3943:0xd4c1c6775862c628"
+  },
+  {
+    "index": 104,
+    "reader": "فيصل الرشود",
+    "method": "plus_code",
+    "plus_code": "PQ35+997"
+  },
+  {
+    "index": 105,
+    "reader": "فارس العمران",
+    "method": "none",
+    "q": "مسجد الفاروق، 3537 Abi Al Hasan Ali Al Jarjani، الروابي, 7870، الرياض 14214",
+    "ftid": "0x3e2f0786ad8403eb:0xc7d2359cc7d094cd"
+  },
+  {
+    "index": 106,
+    "reader": "ميدان اليوسف",
+    "method": "plus_code",
+    "plus_code": "MQPJ+RRG"
+  },
+  {
+    "index": 107,
+    "reader": "عثمان السليماني",
+    "method": "none",
+    "q": "جامع الدويشAlDwish Jamiaa, 6789 Ayn Sarah Al Fayha Riyadh 14254 2799 عين سارة، 2799، الفيحاء، الرياض",
+    "ftid": "0x3e2f07a064771ae7:0x108585d45c25f049"
+  },
+  {
+    "index": 108,
+    "reader": "ماجد الزامل",
+    "method": "none",
+    "q": "جامع د. ناصر بن عقيل الطيار، الأمير مشعل بن عبد العزيز، عرقة، الرياض 12543",
+    "ftid": "0x3e2f1e697d19c1d3:0x5f53fa3601d46b55"
+  },
+  {
+    "index": 109,
+    "reader": "عمر النبراوي",
+    "method": "none",
+    "q": "جامع عبدالمحسن بن سعد بن سعيد ووالديه، 9398 الأمير مشعل بن عبدالعزيز، السفارات، 2657، الرياض 12514",
+    "ftid": "0x3e2f1d60c9a53c53:0x4e60d1b16b574f35"
+  },
+  {
+    "index": 110,
+    "reader": "حسن دغريري",
+    "method": "none",
+    "q": "جامع الخريف، 2811 حذيفة بن اليمان، عليشة، الرياض 12746",
+    "ftid": "0x3e2f052683930d1f:0x2fc7d155922241e5"
+  },
+  {
+    "index": 111,
+    "reader": "عبدالإله السويدان",
+    "method": "none",
+    "q": "مسجد عبدالله بن مسعود رضي الله عنه, 2284 ابي جعفر الخطيب، السويدي، 7291, الرياض 12795",
+    "ftid": "0x3e2f11466768536f:0xd4fd8877f82df036"
+  },
+  {
+    "index": 112,
+    "reader": "عمار الجبرين",
+    "method": "none",
+    "q": "جامع القصر، 3230، السويدي، الرياض 12791 7252،",
+    "ftid": "0x3e2f0f3f8ce0787d:0xdc3c4482010a100d"
+  },
+  {
+    "index": 113,
+    "reader": "عبدالله البكران",
+    "method": "none",
+    "q": "جامع القصر، 3230، السويدي، الرياض 12791 7252،",
+    "ftid": "0x3e2f0f3f8ce0787d:0xdc3c4482010a100d"
+  },
+  {
+    "index": 114,
+    "reader": "سعود آل جمعة",
+    "method": "none",
+    "q": "جامع نوف وهدى الدغيثر، 4348 المجد، ظهرة لبن، 7377، الرياض 13787",
+    "ftid": "0x3e2f1fbe490b517b:0x813ba90b9e754051"
+  },
+  {
+    "index": 115,
+    "reader": "عبدالله العلياني",
+    "method": "none",
+    "q": "جامع عثمان الرشيد، شارع ينبع، 3924 ينبع، ظهرة لبن، الرياض 13782 9269، الرياض 13782",
+    "ftid": "0x3e2f1edd44a91eff:0x59b41f3ff8caa619"
+  },
+  {
+    "index": 116,
+    "reader": "مسعود القليب",
+    "method": "plus_code",
+    "plus_code": "JGC7+MJ2"
+  },
+  {
+    "index": 117,
+    "reader": "خالد الجليل",
+    "method": "plus_code",
+    "plus_code": "HM6J+V58"
+  },
+  {
+    "index": 118,
+    "reader": "عبدالملك الحامد",
+    "method": "plus_code",
+    "plus_code": "PM23+92M"
+  },
+  {
+    "index": 119,
+    "reader": "مطرف المطرف",
+    "method": "none",
+    "q": "مسجد عبد الله بن عبد الرحمن البرغش و والدته رحمهما الله، 3432 ناصفة، شبرا, 6909، الرياض 12798",
+    "ftid": "0x3e2f0f793b82cb01:0xa52e694878a7b95b"
+  },
+  {
+    "index": 120,
+    "reader": "محمد الحميد",
+    "method": "none",
+    "q": "مسجد الشيخ عبدالعزيز الغيهب، 8262 ابن ابي نصر التاجر، 3705، ظهرة البديعة، الرياض 12782",
+    "ftid": "0x3e2f1ab74d46f40b:0x6439f463ec189c17"
+  },
+  {
+    "index": 121,
+    "reader": "أحمد العبيد",
+    "method": "none",
+    "q": "جامع الأمير عبدالله بن سعد، حي، 7942 شارع الإمام أبي حنيفة، العريجاء الوسطى، 3063، الرياض 12971",
+    "ftid": "0x3e2f1a519d49b021:0x4d8b3b804826e64b"
+  },
+  {
+    "index": 122,
+    "reader": "هلال الحارثي",
+    "method": "plus_code",
+    "plus_code": "HHJP+MVQ"
+  },
+  {
+    "index": 123,
+    "reader": "فارس السبيعي",
+    "method": "plus_code",
+    "plus_code": "MHQW+XJX"
+  },
+  {
+    "index": 124,
+    "reader": "مهند الدواس",
+    "method": "plus_code",
+    "plus_code": "HQW6+78M"
+  },
+  {
+    "index": 125,
+    "reader": "مرزوق الأحمد",
+    "method": "none",
+    "q": "جامع الشيخ عبد الله بن عبد العزيز الراجحي رحمه الله بشبرا، 3850 مصافي، شبرا، الرياض 12798",
+    "ftid": "0x3e2f0fe463c7e285:0x236d92ba4b9486d0"
+  },
+  {
+    "index": 126,
+    "reader": "ثامر الزير",
+    "method": "none",
+    "q": "جامع الشيخ إبراهيم الجريسي حي عرقه، 4139 سليمان العدواني، 6894، عرقة, 6894، الرياض 12541",
+    "ftid": "0x3e2f1e62d9b3d971:0x35b71410cfb3c94c"
+  },
+  {
+    "index": 127,
+    "reader": "سعيد القحطاني",
+    "method": "none",
+    "q": "جامع الأميرة حصة بنت مشعل بن عبدالعزيز آل سعود، 2990 شارع مانع المريدي، عرقة، الرياض 12586 6384،",
+    "ftid": "0x3e2f1f00499401fb:0xd724964baff4453d"
+  },
+  {
+    "index": 128,
+    "reader": "فهد قحل",
+    "method": "plus_code",
+    "plus_code": "MH25+X4P"
+  },
+  {
+    "index": 129,
+    "reader": "عبدالعزيز اليحيى",
+    "method": "plus_code",
+    "plus_code": "HPG5+F95"
+  },
+  {
+    "index": 130,
+    "reader": "نايف الحميدي",
+    "method": "none",
+    "q": "مسجد طارق بن زياد رحمه الله.، مسجد طارق بن زياد، عبدالمنعم بن ابي الفتح، السويدي الغربي، الرياض 1299",
+    "ftid": "0x3e2f108657058dc3:0x1605657914ec97d0"
+  },
+  {
+    "index": 131,
+    "reader": "ثامر العامري",
+    "method": "plus_code",
+    "plus_code": "JJ5J+4W5"
+  },
+  {
+    "index": 132,
+    "reader": "محمد الجساس",
+    "method": "plus_code",
+    "plus_code": "JJ5J+4W5"
+  },
+  {
+    "index": 133,
+    "reader": "طلال باكرمان",
+    "method": "none",
+    "q": "جامع الأميرة هيا بنت عبدالعزيز رحمها الله، 3320 الترمذي، بدر، الرياض 14716",
+    "ftid": "0x3e2f0ef732ca5d3d:0xc0696b353c70bc72"
+  },
+  {
+    "index": 134,
+    "reader": "محمد القرعاني",
+    "method": "none",
+    "q": "مسجد أسيد بن حضير، 7385 Ibn Hamid Al Aziziyah Riyadh 14513 3370 ابن حميد، 3370، العزيزية، الرياض 145",
+    "ftid": "0x3e2f09a9b273c63b:0x52a26be5bd2cbf1e"
+  },
+  {
+    "index": 135,
+    "reader": "فهد البواردي",
+    "method": "none",
+    "q": "جامع الشيخ سُليمان العودة، 8004 شارع أم عمارة، بدر، الرياض 14725",
+    "ftid": "0x3e2f0e73375ef2a7:0xc3b9ae387e58f5e"
+  },
+  {
+    "index": 136,
+    "reader": "عادل السنيد",
+    "method": "none",
+    "q": "مسجد جامع الشيخ صالح العقيلي، 7414 الخليفة المأمون، 3426، بدر، الرياض 14724",
+    "ftid": "0x3e2f0e66ee6fd877:0x7a573941e0dd2acd"
+  },
+  {
+    "index": 137,
+    "reader": "عبدالله الخراز",
+    "method": "none",
+    "q": "مجمع الصحابة بحي اليمامة، 7128 ابن الصوري، اليمامة، 2996 ابن الصوري،، الرياض 12674",
+    "ftid": "0x3e2f0f775da0843f:0x6f0d7e5a1049b759"
+  },
+  {
+    "index": 138,
+    "reader": "عبداللطيف العجلان",
+    "method": "plus_code",
+    "plus_code": "JQ75+H54"
+  },
+  {
+    "index": 139,
+    "reader": "رياض عسيري",
+    "method": "plus_code",
+    "plus_code": "JG65+FWG"
+  },
+  {
+    "index": 140,
+    "reader": "محمد العيد",
+    "method": "none",
+    "q": "مسجد مها فالح الدوسري، 7667، العزيزية، الرياض 14511 2631",
+    "ftid": "0x3e2f09d88b2462ed:0x5f9ffe680877d19"
+  },
+  {
+    "index": 141,
+    "reader": "صالح الصويلحي",
+    "method": "none",
+    "q": "جامع شيخ الإسلام، 3953 ابي العباس الفرغاني، 8857، العزيزية, 8857، الرياض 14514",
+    "ftid": "0x3e2f08dfeb27ee2b:0x357c0150893593d3"
+  },
+  {
+    "index": 142,
+    "reader": "علي الغنام",
+    "method": "plus_code",
+    "plus_code": "HQWC+9FV"
+  },
+  {
+    "index": 143,
+    "reader": "عبدالمحسن المحيسني",
+    "method": "plus_code",
+    "plus_code": "HH46+3JF"
+  },
+  {
+    "index": 144,
+    "reader": "عبدالله الحارثي",
+    "method": "none",
+    "q": "",
+    "ftid": "0x3e2f0f51027478e3:0x9c1ed1acc8c257c7"
+  },
+  {
+    "index": 145,
+    "reader": "سعد القريشي",
+    "method": "none",
+    "q": "جامع الأمير فهد بن محمد بن عبدالرحمن آل سعود، طريق الحائر، المصانع، الرياض 14741",
+    "ftid": "0x3e2f095bf7eca505:0xb55451dddc6a8f37"
+  },
+  {
+    "index": 146,
+    "reader": "أيوب الشبانات",
+    "method": "none",
+    "q": "مسجد الجوهرة العبدالسلام، 2699، 6591، الدريهمية، الرياض 12796",
+    "ftid": "0x3e2f0f8e2dc00001:0x3ed114a213e56b8a"
+  },
+  {
+    "index": 147,
+    "reader": "محمد السعيد",
+    "method": "plus_code",
+    "plus_code": "HJ8R+XX8"
+  }
+]

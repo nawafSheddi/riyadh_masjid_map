@@ -8,7 +8,7 @@ import { useRef, useEffect, useCallback } from 'react'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { cn } from '@/lib/utils'
-import { MARKER_CONFIG } from '@/constants/map'
+import { MAP_CONFIG, MARKER_CONFIG } from '@/constants/map'
 import { Loader2, AlertCircle } from '@/design-tokens'
 import { useMapLibre } from './useMapLibre'
 import type { Masjid, Region, Coordinates } from '@/types'
@@ -155,11 +155,16 @@ export function MasjidMap({
     }
   }, [map, filteredMasjids, selectedMasjid, onMasjidSelect])
 
-  // Fly to selected masjid
+  // Fly to selected masjid, or zoom back out when dismissed
+  const prevSelectedRef = useRef<Masjid | null | undefined>(undefined)
+
   useEffect(() => {
     if (selectedMasjid) {
       flyTo(selectedMasjid.coordinates)
+    } else if (prevSelectedRef.current) {
+      flyTo(MAP_CONFIG.CENTER, MAP_CONFIG.INITIAL_ZOOM)
     }
+    prevSelectedRef.current = selectedMasjid
   }, [selectedMasjid, flyTo])
 
   // Track map movement

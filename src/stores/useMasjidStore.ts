@@ -5,7 +5,7 @@
  */
 
 import { create } from 'zustand'
-import { SAMPLE_MASJIDS } from '@/data/masjids'
+import { MASJIDS } from '@/data/masjids'
 import type { Masjid, Region } from '@/types'
 
 interface MasjidState {
@@ -18,7 +18,7 @@ interface MasjidState {
 }
 
 export const useMasjidStore = create<MasjidState>((set) => ({
-  masjids: SAMPLE_MASJIDS,
+  masjids: MASJIDS,
   selectedMasjid: null,
   activeRegions: [],
 

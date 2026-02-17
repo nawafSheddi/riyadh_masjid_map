@@ -90,3 +90,8 @@ secrets/
 *.db
 *.sqlite
 !riyadh_list.xlsx
+
+# Python scripts
+scripts/.venv/
+scripts/__pycache__/
+scripts/coordinates_cache.json
