@@ -28,7 +28,7 @@ export const MAP_CONFIG = {
   STYLE_URL: '/styles/masjid-map-style.json',
 
   // OpenFreeMap tile source (fallback)
-  OPENFREEMAP_STYLE: 'https://tiles.openfreemap.org/styles/liberty',
+  OPENFREEMAP_STYLE: 'https://tiles.openfreemap.org/styles/dark',
 } as const
 
 export const MARKER_CONFIG = {
