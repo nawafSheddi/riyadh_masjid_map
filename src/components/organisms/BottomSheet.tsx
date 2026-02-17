@@ -8,10 +8,15 @@
 import { cn } from '@/lib/utils'
 import { IconButton } from '@/components/ui'
 import { RegionBadge, AudioPlayerControls } from '@/components/molecules'
-import { X, Navigation, MapPin } from '@/design-tokens'
+import { X, Navigation, MapPin, ExternalLink } from '@/design-tokens'
 import { useAudioPlayer } from '@/hooks/useAudioPlayer'
 import { UI_CONSTANTS } from '@/constants/ui'
 import type { Masjid } from '@/types'
+
+/** Check if a URL is a direct audio file (R2-hosted) vs an external page link */
+function isDirectAudioUrl(url: string): boolean {
+  return url.includes('masjid.nawaf-alsheddi.com')
+}
 
 interface BottomSheetProps {
   masjid: Masjid | null
@@ -68,11 +73,16 @@ function BottomSheetContent({
   masjid: Masjid
   onClose: () => void
 }) {
+  const isAudioFile = isDirectAudioUrl(masjid.audioUrl)
   const { isPlaying, isMuted, progress, togglePlayPause, toggleMute } =
-    useAudioPlayer(masjid.audioUrl)
+    useAudioPlayer(isAudioFile ? masjid.audioUrl : '')
 
   const handleNavigate = () => {
     window.open(masjid.googleMapsUrl, '_blank', 'noopener,noreferrer')
+  }
+
+  const handleOpenAudioLink = () => {
+    window.open(masjid.audioUrl, '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -119,15 +129,28 @@ function BottomSheetContent({
         <RegionBadge region={masjid.region} />
       </div>
 
-      {/* Audio Player */}
-      <AudioPlayerControls
-        isPlaying={isPlaying}
-        isMuted={isMuted}
-        progress={progress}
-        onPlayPause={togglePlayPause}
-        onMuteToggle={toggleMute}
-        className="pt-2"
-      />
+      {/* Audio: inline player for R2 files, external link button for others */}
+      {isAudioFile ? (
+        <AudioPlayerControls
+          isPlaying={isPlaying}
+          isMuted={isMuted}
+          progress={progress}
+          onPlayPause={togglePlayPause}
+          onMuteToggle={toggleMute}
+          className="pt-2"
+        />
+      ) : (
+        <div className="flex items-center gap-3 pt-2" dir="rtl">
+          <IconButton
+            icon={ExternalLink}
+            variant="primary"
+            size="md"
+            label="استماع للتلاوة"
+            onClick={handleOpenAudioLink}
+          />
+          <span className="text-sm text-text-secondary">استماع للتلاوة (رابط خارجي)</span>
+        </div>
+      )}
 
       {/* Notes */}
       {masjid.notes && (

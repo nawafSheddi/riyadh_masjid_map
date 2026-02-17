@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import { lazy, Suspense } from 'react'
-import { MasjidMap, BottomSheet, RegionFilterBar } from '@/components/organisms'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { lazy, Suspense, useState } from 'react'
+import { MasjidMap, BottomSheet, RegionFilterBar, SettingsSheet } from '@/components/organisms'
 import { useMasjidStore } from '@/stores/useMasjidStore'
 import { Settings } from '@/design-tokens'
 
@@ -12,6 +12,7 @@ const DesignSystemPage = import.meta.env.DEV
 function HomePage() {
   const { masjids, selectedMasjid, activeRegions, selectMasjid, toggleRegion } =
     useMasjidStore()
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false)
 
   return (
     <div className="h-screen w-screen relative overflow-hidden bg-night-deepest">
@@ -38,16 +39,21 @@ function HomePage() {
         onClose={() => selectMasjid(null)}
       />
 
-      {/* Dev-only design system link */}
-      {import.meta.env.DEV && (
-        <Link
-          to="/design-system"
-          className="absolute bottom-4 left-4 z-10 w-10 h-10 rounded-full bg-night-medium border border-border-subtle flex items-center justify-center hover:bg-night-soft transition-colors"
-          title="نظام التصميم"
-        >
-          <Settings className="w-4 h-4 text-text-secondary" />
-        </Link>
-      )}
+      {/* Settings button */}
+      <button
+        onClick={() => setIsSettingsOpen(true)}
+        className="absolute bottom-4 left-4 z-10 w-10 h-10 rounded-full bg-night-medium border border-border-subtle flex items-center justify-center hover:bg-night-soft transition-colors"
+        title="الإعدادات"
+        aria-label="الإعدادات"
+      >
+        <Settings className="w-4 h-4 text-text-secondary" />
+      </button>
+
+      {/* Settings bottom sheet */}
+      <SettingsSheet
+        isOpen={isSettingsOpen}
+        onClose={() => setIsSettingsOpen(false)}
+      />
     </div>
   )
 }

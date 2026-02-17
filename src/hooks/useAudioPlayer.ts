@@ -22,6 +22,11 @@ export function useAudioPlayer(audioUrl: string): UseAudioPlayerReturn {
 
   // Initialize and manage audio element
   useEffect(() => {
+    if (!audioUrl) {
+      audioRef.current = null
+      return
+    }
+
     const audio = new Audio(audioUrl)
     audioRef.current = audio
 

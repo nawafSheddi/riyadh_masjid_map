@@ -16,7 +16,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7632238, lng: 46.6177797 },
     googleMapsUrl: 'https://maps.app.goo.gl/DnSeU4L9tFpq9LnW7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/dCuTWEoGvpU?si=LTz7-h64S4dC2bCY',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-001.m4a',
   },
   {
     id: 'n-002',
@@ -97,7 +97,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8230443, lng: 46.662059 },
     googleMapsUrl: 'https://maps.app.goo.gl/feQrqmauUnD9r5BJ9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/W6URV-Kr6PA?si=lwA3HZCLGTPqB9Cb',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-010.m4a',
   },
   {
     id: 'n-011',
@@ -106,7 +106,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7758491, lng: 46.6938784 },
     googleMapsUrl: 'https://maps.app.goo.gl/8oXXGLXxPbzRUkA18?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/OFyZltLDPDY?si=71OWo8OagcAY85M5',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-011.m4a',
   },
   {
     id: 'n-012',
@@ -115,7 +115,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8526354, lng: 46.6504329 },
     googleMapsUrl: 'https://maps.app.goo.gl/T6PsVPy62ciNndXW6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/3Lfr0_cEDVs?si=hBLlvYtGsyOzUDUR',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-012.m4a',
   },
   {
     id: 'n-013',
@@ -133,7 +133,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7730818, lng: 46.69089 },
     googleMapsUrl: 'https://maps.app.goo.gl/vJA9juFKHvdWJJet5?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/L-uFwXn8F0k?si=BjJm0sb_39wE2_2U',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-014.m4a',
   },
   {
     id: 'n-015',
@@ -160,7 +160,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8374197, lng: 46.5377366 },
     googleMapsUrl: 'https://maps.app.goo.gl/dUtQgjNs9bqbPCF86?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/pZWOaX1bHnw?si=4Ksa0bQU-oJdhtxQ',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-017.m4a',
   },
   {
     id: 'n-018',
@@ -187,7 +187,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.896389, lng: 46.5991676 },
     googleMapsUrl: 'https://maps.app.goo.gl/rmCh26sSYMZEWWH69?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/NnBg67u4Rv8?si=tLD9L3cmOcHR7rjx',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-020.m4a',
     notes: 'رمضان فقط',
   },
   {
@@ -206,7 +206,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7448646, lng: 46.669133 },
     googleMapsUrl: 'https://maps.app.goo.gl/8GWtZSfCitttdDv37?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/AAFNIWPgLeU?si=N2vsMjyvTiHxhBQr',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-022.m4a',
   },
   {
     id: 'n-023',
@@ -224,7 +224,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7670124, lng: 46.5839721 },
     googleMapsUrl: 'https://maps.app.goo.gl/yaVxF7Dd5zdJDVQP6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/s0eJn7DkSgo?si=2XziWiDrYAWMokR2',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-024.m4a',
   },
   {
     id: 'n-025',
@@ -233,7 +233,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.6826338, lng: 46.6819065 },
     googleMapsUrl: 'https://maps.app.goo.gl/1LzTgAGkLg6fxb6C8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/pgrmmH1WqII?si=X3w7TLPFXrScnujK',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-025.m4a',
   },
   {
     id: 'n-026',
@@ -251,7 +251,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8294206, lng: 46.6850418 },
     googleMapsUrl: 'https://maps.app.goo.gl/BC75hcn36HUVQzC48?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/Q6i2ekXVqIY?si=1ULE4YGPXeWhX5rQ',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-027.m4a',
   },
   {
     id: 'n-028',
@@ -260,7 +260,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.9170112, lng: 46.6318613 },
     googleMapsUrl: 'https://maps.app.goo.gl/5sH2drTp4MX5jybz5?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/JZgzU18fFo0?si=x_0_Ywc4z0GygPbK',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-028.m4a',
   },
   {
     id: 'n-029',
@@ -287,7 +287,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8325564, lng: 46.5999861 },
     googleMapsUrl: 'https://maps.app.goo.gl/dmKm2215EULysG58A?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/GRfntT-IwlY?si=-9AgrhVRkVRityvP',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-031.m4a',
   },
   {
     id: 'n-032',
@@ -314,7 +314,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8283983, lng: 46.6074398 },
     googleMapsUrl: 'https://maps.app.goo.gl/AhPv3tFTtLxyPDxP6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/2iGBZp7bUck?si=MDin8kPm1EQzsnaq',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-034.m4a',
   },
   {
     id: 'n-035',
@@ -323,7 +323,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8283983, lng: 46.6074398 },
     googleMapsUrl: 'https://maps.app.goo.gl/AhPv3tFTtLxyPDxP6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/_GTY2asJpq4?si=0aUP3Xp0Oqr5HeOW',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-035.m4a',
   },
   {
     id: 'n-036',
@@ -332,7 +332,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7193563, lng: 46.6586164 },
     googleMapsUrl: 'https://maps.app.goo.gl/c2XbmTSKS88Ft6mdA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/_2lNqGtShOg?si=8DlUEzS7ZUGVwhP7',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-036.m4a',
   },
   {
     id: 'n-037',
@@ -341,7 +341,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7176849, lng: 46.6015738 },
     googleMapsUrl: 'https://maps.app.goo.gl/bTiQJeAM7fiykTFv8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/vLwI3wUUJac?si=wEWLxuUKvMyX3PvI',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-037.m4a',
   },
   {
     id: 'n-038',
@@ -368,7 +368,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7399338, lng: 46.6861405 },
     googleMapsUrl: 'https://maps.app.goo.gl/52KkKkW2C8rBy6Zw9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/_XAfLBlrfrU?si=09t0GzT4PKviv01y',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-040.m4a',
   },
   {
     id: 'n-041',
@@ -377,7 +377,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7061355, lng: 46.655513 },
     googleMapsUrl: 'https://maps.app.goo.gl/wwYvb3VVdqrsvfzm6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/9QStlXzAMng?si=HsjBohY5mJxRqOU4',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-041.m4a',
   },
   {
     id: 'n-042',
@@ -386,7 +386,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7421168, lng: 46.6102286 },
     googleMapsUrl: 'https://maps.app.goo.gl/rRey4Pe3u4caoLTU6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/c_4Fq4A7geM?si=Pd__qFRLqF9dmAJR',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-042.m4a',
   },
   {
     id: 'n-043',
@@ -395,7 +395,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7578119, lng: 46.6068793 },
     googleMapsUrl: 'https://maps.app.goo.gl/kL6rdRxkXPXqc6vV9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/sgtaHHg2Gm4?si=VCIum243pOOu7CKq',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-043.m4a',
   },
   {
     id: 'n-044',
@@ -404,7 +404,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7436768, lng: 46.5957159 },
     googleMapsUrl: 'https://maps.app.goo.gl/iMPcyc1y5zzEfxPN9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/qetL6PbtY9s?si=pU5WzzhU10Lnf4bi',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-044.m4a',
   },
   {
     id: 'n-045',
@@ -413,7 +413,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8826263, lng: 46.6513155 },
     googleMapsUrl: 'https://maps.app.goo.gl/VZt56WDpB1gtEbDC6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/F2jMER24m5k?si=roAze00UJm77Bg5Z',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-045.m4a',
     notes: 'رمضان فقط',
   },
   {
@@ -432,7 +432,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8305904, lng: 46.6215938 },
     googleMapsUrl: 'https://maps.app.goo.gl/aUpaTTUhgw1dqqTa8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/NiWDuIIRxhQ?si=edvE_IKhj7RyhJFD',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-047.m4a',
   },
   {
     id: 'n-048',
@@ -441,7 +441,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.8120902, lng: 46.6645913 },
     googleMapsUrl: 'https://maps.app.goo.gl/e1RGG8AujPatuoKP8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/4jKj_e_kanw?si=nzXQa8fXDzIKFLpo',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-048.m4a',
   },
   {
     id: 'n-049',
@@ -468,7 +468,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7918834, lng: 46.6565934 },
     googleMapsUrl: 'https://maps.app.goo.gl/pgauocqkonNYnyzP9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/LjU7JhO3080?si=uVUpeFYZoLzVcNDx',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-051.m4a',
   },
   {
     id: 'n-052',
@@ -477,7 +477,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7594096, lng: 46.6887295 },
     googleMapsUrl: 'https://maps.app.goo.gl/msKyaxx6zk8V57TCA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/yfXtm9TT-Ec?si=fLts13hgyCuDonlE',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-052.m4a',
   },
   {
     id: 'n-053',
@@ -486,7 +486,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.7478251, lng: 46.649006 },
     googleMapsUrl: 'https://maps.app.goo.gl/vGzPhRoXYQiuUJ7v8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/Kwak6Y1tqOg?si=G2kEd366SRN8NrYy',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-053.m4a',
   },
   {
     id: 'n-054',
@@ -495,7 +495,7 @@ export const MASJIDS: Masjid[] = [
     region: 'north',
     coordinates: { lat: 24.779625, lng: 46.6644977 },
     googleMapsUrl: 'https://maps.app.goo.gl/Wza24DgpauqWgW4f9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/Bfhia3Mk3BQ?si=roJxv3L3fFvuyRv5',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/n-054.m4a',
   },
 
   // ─── East Region (الشرق) ───
@@ -506,7 +506,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7911664, lng: 46.7339892 },
     googleMapsUrl: 'https://maps.app.goo.gl/4A5LhMiwrmPS5eC57?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/KNyZKlvNQYc?si=nJP_9V7iTKP52lBJ',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-001.m4a',
   },
   {
     id: 'e-002',
@@ -515,7 +515,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.8282505, lng: 46.7309626 },
     googleMapsUrl: 'https://maps.app.goo.gl/vtcAc4VTiPEicec6A?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/NHUL5JFYAkc?si=dJ6df3qnWI-jaBEl',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-002.m4a',
   },
   {
     id: 'e-003',
@@ -524,7 +524,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7409168, lng: 46.7959884 },
     googleMapsUrl: 'https://maps.app.goo.gl/uFg7cv7h5KZb1ppE8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/n27EuIjGnW0?si=pjBtFkP7zqTEdo-4',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-003.m4a',
   },
   {
     id: 'e-004',
@@ -533,7 +533,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7086136, lng: 46.8083909 },
     googleMapsUrl: 'https://maps.app.goo.gl/qefFS2YY4B31dSFYA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/sKXX_EKNMxg?si=AQhShRPgIovnwadf',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-004.m4a',
   },
   {
     id: 'e-005',
@@ -542,7 +542,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7538431, lng: 46.7731631 },
     googleMapsUrl: 'https://maps.app.goo.gl/nN5kozSkENc8sJLV6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/JcW9ZQD0xiw?si=IvVQWOQ63zXCVNR9',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-005.m4a',
   },
   {
     id: 'e-006',
@@ -551,7 +551,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7083747, lng: 46.8205896 },
     googleMapsUrl: 'https://maps.app.goo.gl/1kYtGPTtLDCrwKJ4A?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/M1jkx5OyMLs?si=rf9d35EIohs5nfyf',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-006.m4a',
   },
   {
     id: 'e-007',
@@ -560,7 +560,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7324005, lng: 46.7422902 },
     googleMapsUrl: 'https://maps.app.goo.gl/2HiA2grhNr7w9CHi8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/80VS6k_rAGg?si=RHYLE3hbdrrF4uHf',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-007.m4a',
   },
   {
     id: 'e-008',
@@ -569,7 +569,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6772732, lng: 46.7797386 },
     googleMapsUrl: 'https://maps.app.goo.gl/X25i9HyhiVF7sKQv8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/AmpkwDOljls?si=w798GRL7d5GHFZS7',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-008.m4a',
   },
   {
     id: 'e-009',
@@ -578,7 +578,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.9205552, lng: 46.8113792 },
     googleMapsUrl: 'https://maps.app.goo.gl/cKq344ieedEZJrzL8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/yfV_n_000l4?si=CNbvwk_cK3AU7wWV',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-009.m4a',
   },
   {
     id: 'e-010',
@@ -587,7 +587,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.8176009, lng: 46.7797006 },
     googleMapsUrl: 'https://maps.app.goo.gl/AhKrp72kWo7U7TbB6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/4x7CuHMKyMc?si=cANZiQVjnYhpTh4Q',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-010.m4a',
   },
   {
     id: 'e-011',
@@ -596,7 +596,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.8365567, lng: 46.7447234 },
     googleMapsUrl: 'https://maps.app.goo.gl/kAhs1JB8AJ89WkB46?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/j31pzdMzV6Q?si=P2l6Wppely1L7-Vb',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-011.m4a',
   },
   {
     id: 'e-012',
@@ -605,7 +605,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6759751, lng: 46.7765929 },
     googleMapsUrl: 'https://maps.app.goo.gl/nH2QkYTxHdqnsujw8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/g87OAeK3p2s?si=4kTEBTiwd4CMjuGR',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-012.m4a',
   },
   {
     id: 'e-013',
@@ -614,7 +614,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6823005, lng: 46.7916663 },
     googleMapsUrl: 'https://maps.app.goo.gl/PqNwrPJR2c6zXN2f6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/ehc4VFZOufw?si=KMmkNfN0vDs3zwTS',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-013.m4a',
   },
   {
     id: 'e-014',
@@ -623,7 +623,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6760003, lng: 46.7928666 },
     googleMapsUrl: 'https://maps.app.goo.gl/kj6KkFWgA9J5HP3K7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/qm1nkod4MB4?si=rgEBInWSrJWTHEMk',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-014.m4a',
   },
   {
     id: 'e-015',
@@ -641,7 +641,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6705739, lng: 46.8052949 },
     googleMapsUrl: 'https://maps.app.goo.gl/3vzS55FXZPr6P2Wy6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/YTBSmnJmfew?si=IP8o-uw6K6XTZE7h',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-016.m4a',
   },
   {
     id: 'e-017',
@@ -650,7 +650,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.8051986, lng: 46.742363 },
     googleMapsUrl: 'https://maps.app.goo.gl/Jno5RyVyQMYmhqZM7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/EZ1_Tzf7V4M?si=7oxeB3K-dS0Mm0gz',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-017.m4a',
   },
   {
     id: 'e-018',
@@ -659,7 +659,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6888691, lng: 46.788096 },
     googleMapsUrl: 'https://maps.app.goo.gl/9gsV8837BBd4VCFd7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/gSb4gOyzwXk?si=XdUDE6Bj0Q7Mktw7',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-018.m4a',
   },
   {
     id: 'e-019',
@@ -668,7 +668,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6832461, lng: 46.7939579 },
     googleMapsUrl: 'https://maps.app.goo.gl/Ls2Gh7nNPxwNifqD7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/2-VOPLRGfmg?si=KFKEy-MBkE2ld8-I',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-019.m4a',
   },
   {
     id: 'e-020',
@@ -677,7 +677,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6922174, lng: 46.7712879 },
     googleMapsUrl: 'https://maps.app.goo.gl/jmV9ED3NEN7bEryn7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/-U45fURSf8c?si=GnrhJqvtNepUjhJ5',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-020.m4a',
   },
   {
     id: 'e-021',
@@ -686,7 +686,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6929635, lng: 46.7625481 },
     googleMapsUrl: 'https://maps.app.goo.gl/ZiHByuKGGyqC59qm7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/XzCea-LQ2p0?si=CXU9HbzOK5nE5WiH',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-021.m4a',
   },
   {
     id: 'e-022',
@@ -695,7 +695,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.8059047, lng: 46.7646092 },
     googleMapsUrl: 'https://maps.app.goo.gl/ZNkKSMB1QfVCtuQJ9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/CQq2bzhEPvA?si=kOsR9ru6V-iWp9eE',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-022.m4a',
   },
   {
     id: 'e-023',
@@ -704,7 +704,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6807756, lng: 46.7849994 },
     googleMapsUrl: 'https://maps.app.goo.gl/zJX6zStYYcpTUVvWA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/khbGqHhbVU4?si=68bQB6pgoRMTvErT',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-023.m4a',
   },
   {
     id: 'e-024',
@@ -713,7 +713,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7162815, lng: 46.7723796 },
     googleMapsUrl: 'https://maps.app.goo.gl/S3s6TE5yh8E4WouE8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/9me04__1BBA?si=dre8p2yUZbvruYru',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-024.m4a',
   },
   {
     id: 'e-025',
@@ -722,7 +722,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.8166502, lng: 46.7905267 },
     googleMapsUrl: 'https://maps.app.goo.gl/nvEq55NVRQiRsdvz7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/IoILrhhWp-4?si=Kd__f9yH7B2m7wBM',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-025.m4a',
   },
   {
     id: 'e-026',
@@ -731,7 +731,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7848449, lng: 46.7523193 },
     googleMapsUrl: 'https://maps.app.goo.gl/xnhw2LkbfxqEiVgAA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/AoMA8mjpQp8?si=2VjZrQx3X033M_8M',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-026.m4a',
   },
   {
     id: 'e-027',
@@ -740,7 +740,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7248138, lng: 46.8130553 },
     googleMapsUrl: 'https://maps.app.goo.gl/zULwvcagJsU2f4Wr9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/DAc-Qw2eYgg?si=AKQ23vt3tkRaqgB2',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-027.m4a',
   },
   {
     id: 'e-028',
@@ -758,7 +758,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7073733, lng: 46.7732593 },
     googleMapsUrl: 'https://maps.app.goo.gl/SbP5ctBjX8yEbpVA7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/g-HU5WEjuzU?si=rnSNkqiqVaLvUWtZ',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-029.m4a',
   },
   {
     id: 'e-030',
@@ -767,7 +767,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6818052, lng: 46.8043783 },
     googleMapsUrl: 'https://maps.app.goo.gl/joccBy3Fzvo9RjMV6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/6IexrKpFUrE?si=oyCb6Nc0tdhKEO8t',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-030.m4a',
   },
   {
     id: 'e-031',
@@ -776,7 +776,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6731616, lng: 46.7820525 },
     googleMapsUrl: 'https://maps.app.goo.gl/FpmALRVFVpeyDs3u9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/ERYFuDcPel0?si=n2osrm_671awQ-dz',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-031.m4a',
   },
   {
     id: 'e-032',
@@ -785,7 +785,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7790758, lng: 46.7463876 },
     googleMapsUrl: 'https://maps.app.goo.gl/HjMfYcNCTMLVUUGu7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/oPRrk0IfcGw?si=a9n8S3_Q2nhewHhl',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-032.m4a',
   },
   {
     id: 'e-033',
@@ -794,7 +794,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7865236, lng: 46.7642709 },
     googleMapsUrl: 'https://maps.app.goo.gl/MoRL1RWNo9L182qo8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/Q8PvMSsB2r4?si=PPXHsJOcS_oz40Xc',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-033.m4a',
   },
   {
     id: 'e-034',
@@ -803,7 +803,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7811959, lng: 46.8960643 },
     googleMapsUrl: 'https://maps.app.goo.gl/AVPgHu4GVt9Q5Twd6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/s0dqUeNNYyE?si=rTJL5ZWmY7tHBpvw',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-034.m4a',
   },
   {
     id: 'e-035',
@@ -812,7 +812,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7102217, lng: 46.6902986 },
     googleMapsUrl: 'https://maps.app.goo.gl/iHJbpoNo1kjx5pef8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/rnFGfe4_uCo?si=ow8QAoA9MsShZwyf',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-035.m4a',
   },
   {
     id: 'e-036',
@@ -821,7 +821,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7015008, lng: 46.7739527 },
     googleMapsUrl: 'https://maps.app.goo.gl/fH3KxpKW66fHcnT39?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/6_iuQReowoc?si=vQSG3bkzkjRfYKuB',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-036.m4a',
   },
   {
     id: 'e-037',
@@ -839,7 +839,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6716672, lng: 46.7882095 },
     googleMapsUrl: 'https://maps.app.goo.gl/7GyrVr6EQwgoqY9QA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/htdluO_Cn9M?si=0ksqQZR-Z9irnBbO',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-038.m4a',
   },
   {
     id: 'e-039',
@@ -848,7 +848,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.8227008, lng: 46.7414081 },
     googleMapsUrl: 'https://maps.app.goo.gl/qk4ujHpJ6zMKqP276?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/U5Zj7roX9hI?si=OsjY8uWBPFKXEjkt',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-039.m4a',
   },
   {
     id: 'e-040',
@@ -866,7 +866,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7471333, lng: 46.803807 },
     googleMapsUrl: 'https://maps.app.goo.gl/Wa7KAqHmKRkS8p8n6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/Jklt_AFeuP0?si=qPCcGeJOwnCBkBxY',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-041.m4a',
   },
   {
     id: 'e-042',
@@ -875,7 +875,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7043564, lng: 46.7181404 },
     googleMapsUrl: 'https://maps.app.goo.gl/F7BKWEkqPbkqWz7q7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/Z6Es4RzS6K0?si=9dfQG2Yk226RUoro',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-042.m4a',
   },
   {
     id: 'e-043',
@@ -884,7 +884,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.8178764, lng: 46.7213566 },
     googleMapsUrl: 'https://maps.app.goo.gl/fi2qkS9VAKW7cFTdA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/nEEQ71iayms?si=GrZGiH3uS1HJErbY',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-043.m4a',
   },
   {
     id: 'e-044',
@@ -911,7 +911,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7041398, lng: 46.7669615 },
     googleMapsUrl: 'https://maps.app.goo.gl/cuYvbj4jvcy6bR286?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/BU7TNVY4oOc?si=3q_4VtPvdg4fuvkz',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-046.m4a',
   },
   {
     id: 'e-047',
@@ -929,7 +929,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7364113, lng: 46.7888752 },
     googleMapsUrl: 'https://maps.app.goo.gl/rWv92ygmqjqpNPyg6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/22d0z2TSdZM?si=RI2YuO7fDywlzo63',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-048.m4a',
   },
   {
     id: 'e-049',
@@ -938,7 +938,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.813721, lng: 46.8030744 },
     googleMapsUrl: 'https://maps.app.goo.gl/XXrLGWimR5ywnjZX8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/MTIVj-35mQM?si=cNrqZ6I4N1z6J8vV',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-049.m4a',
   },
   {
     id: 'e-050',
@@ -947,7 +947,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6829412, lng: 46.7863096 },
     googleMapsUrl: 'https://maps.app.goo.gl/X4E3vK5jnttkoZLF6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/ypTvZA2xA1M?feature=shared',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-050.m4a',
   },
   {
     id: 'e-051',
@@ -956,7 +956,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.7082447, lng: 46.7681598 },
     googleMapsUrl: 'https://maps.app.goo.gl/fqarJZuwsZpcVXtw6?g_st=ic',
-    audioUrl: 'https://youtu.be/zLGLibFq9d0?feature=shared',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-051.m4a',
   },
   {
     id: 'e-052',
@@ -965,7 +965,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6771453, lng: 46.8210262 },
     googleMapsUrl: 'https://maps.app.goo.gl/iQpx6o3SkDXg8JFW6?g_st=ic',
-    audioUrl: 'https://youtu.be/VMNbSFOk3PM?feature=shared',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-052.m4a',
   },
   {
     id: 'e-053',
@@ -974,7 +974,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.687073, lng: 46.7820798 },
     googleMapsUrl: 'https://maps.app.goo.gl/L6zyrPgXTDKpF2au5?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/tQzfuepRFRQ?si=EShTG3pUeROfH1jn',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-053.m4a',
   },
   {
     id: 'e-054',
@@ -983,7 +983,7 @@ export const MASJIDS: Masjid[] = [
     region: 'east',
     coordinates: { lat: 24.6751653, lng: 46.803808 },
     googleMapsUrl: 'https://maps.app.goo.gl/PPsKGkUwh55vzcoi7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/vOSDuhbCKnI?si=G30cxHqo8RO00Lnx',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/e-054.m4a',
     notes: 'رمضان فقط',
   },
 
@@ -1004,7 +1004,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.7310042, lng: 46.6499 },
     googleMapsUrl: 'https://maps.app.goo.gl/6EYfabCGEpZ22Vit9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/LAwtMuzJnJU?si=s1bkQb3GZLDL3vYM',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-002.m4a',
   },
   {
     id: 'ws-003',
@@ -1013,7 +1013,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.6283391, lng: 46.6829916 },
     googleMapsUrl: 'https://maps.app.goo.gl/6B35xKjigQdwGksD7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/sUD9l7GeAns?si=BnBMM5xLfxdkwegm',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-003.m4a',
   },
   {
     id: 'ws-004',
@@ -1094,7 +1094,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5995793, lng: 46.7123533 },
     googleMapsUrl: 'https://maps.app.goo.gl/xhhnCX4XuBcFA95L9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/8Xb8EgEVqIc',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-012.m4a',
   },
   {
     id: 'ws-013',
@@ -1103,7 +1103,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.6014175, lng: 46.6615437 },
     googleMapsUrl: 'https://maps.app.goo.gl/SMMqbzoJRiga8C6i7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/_Hjrf7qE89g?si=qU24IAlSfgq_m6Y8',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-013.m4a',
   },
   {
     id: 'ws-014',
@@ -1121,7 +1121,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5817223, lng: 46.5872421 },
     googleMapsUrl: 'https://maps.app.goo.gl/Tkj36vgLS4cxa5mm8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/O2zJSdOnVns?si=E2B4oB-hWfF0kfMc',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-015.m4a',
   },
   {
     id: 'ws-016',
@@ -1130,7 +1130,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.6901412, lng: 46.5970439 },
     googleMapsUrl: 'https://maps.app.goo.gl/SWFuJ8LJorqRgk6Y9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/7yAVqdqpt50?si=bxnsGBbZfAHXdee2',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-016.m4a',
   },
   {
     id: 'ws-017',
@@ -1139,7 +1139,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5957223, lng: 46.7607944 },
     googleMapsUrl: 'https://maps.app.goo.gl/fCLAa9CUC8yuMner7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/nX7fBrRWTVc?si=jSnCOsBUyKz0cdFg',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-017.m4a',
   },
   {
     id: 'ws-018',
@@ -1148,7 +1148,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5802048, lng: 46.6761956 },
     googleMapsUrl: 'https://maps.app.goo.gl/DpT6TCDChxcEq48x5?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/CZlb-90oc6k?si=Ew_YZx8KiZwFxRx5',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-018.m4a',
   },
   {
     id: 'ws-019',
@@ -1157,7 +1157,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.6754738, lng: 46.5829941 },
     googleMapsUrl: 'https://maps.app.goo.gl/fhALkv6svCwGosBS6?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/IHQ4qbZ9m8w?si=pUzyIcpGgK38A6hv',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-019.m4a',
   },
   {
     id: 'ws-020',
@@ -1193,7 +1193,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5681414, lng: 46.6290209 },
     googleMapsUrl: 'https://maps.app.goo.gl/e9Q6fJE6VxwyiuiKA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/bbc9ZfXVLeY?si=gXic8UuQZQaeFZT1',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-023.m4a',
   },
   {
     id: 'ws-024',
@@ -1211,7 +1211,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.6080495, lng: 46.6323096 },
     googleMapsUrl: 'https://maps.app.goo.gl/YmJqco5ehjKweFmF7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtube.com/shorts/24zOfgQMf08?si=9N--5Qs2c0dUA4Am',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-025.m4a',
   },
   {
     id: 'ws-026',
@@ -1220,7 +1220,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.556405, lng: 46.7139976 },
     googleMapsUrl: 'https://maps.app.goo.gl/dUb1fGEMgxFQtCZv9?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/LCn1tMjydEg?si=Jc8_q69WQkWByCEK',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-026.m4a',
   },
   {
     id: 'ws-027',
@@ -1229,7 +1229,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5871544, lng: 46.7883407 },
     googleMapsUrl: 'https://maps.app.goo.gl/UVaxdpmADdVoEeYQ8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/N0mXzWMiSZs?si=bD8PzDNKURUBp9eC',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-027.m4a',
   },
   {
     id: 'ws-028',
@@ -1238,7 +1238,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5273173, lng: 46.6904415 },
     googleMapsUrl: 'https://maps.app.goo.gl/TSPaJoQS5JfxaL6t8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/sMfZaf7Kew4?si=Zjzavfjrjm7iSutF',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-028.m4a',
   },
   {
     id: 'ws-029',
@@ -1256,7 +1256,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5954139, lng: 46.7128874 },
     googleMapsUrl: 'https://maps.app.goo.gl/FwZ74Wbiu8foFFb6A?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/jwy5aVrH8lw?si=2pGkzN9oRIAb9pOt',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-030.m4a',
   },
   {
     id: 'ws-031',
@@ -1265,7 +1265,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.581396, lng: 46.8113256 },
     googleMapsUrl: 'https://maps.app.goo.gl/DRUiayy6KfQUM7AT8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/v5Uy4DneUuc?si=8Vx3e_Dgf_tWZE0R',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-031.m4a',
   },
   {
     id: 'ws-032',
@@ -1274,7 +1274,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.6111824, lng: 46.5098208 },
     googleMapsUrl: 'https://maps.app.goo.gl/oDqPHoHyKTpSHNMp8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/pU5g4N8hYT0?si=inPhXIFGq7uLzmkW',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-032.m4a',
   },
   {
     id: 'ws-033',
@@ -1283,7 +1283,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5947095, lng: 46.8241269 },
     googleMapsUrl: 'https://maps.google.com/?q=%D9%85%D8%B3%D8%AC%D8%AF%20%D9%85%D9%87%D8%A7%20%D9%81%D8%A7%D9%84%D8%AD%20%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A%D8%8C%207667%D8%8C%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9%D8%8C%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2014511%202631&ftid=0x3e2f09d88b2462ed:0x5f9ffe680877d19&entry=gps&lucs=,94242493,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/e3NqhJayoEs?feature=shared',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-033.m4a',
   },
   {
     id: 'ws-034',
@@ -1292,7 +1292,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5872094, lng: 46.7660281 },
     googleMapsUrl: 'https://maps.app.goo.gl/fVdqny6ELFLy9yqC8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/UGpbHs3l1PQ?feature=shared',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-034.m4a',
   },
   {
     id: 'ws-035',
@@ -1301,7 +1301,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.5961436, lng: 46.771009 },
     googleMapsUrl: 'https://maps.app.goo.gl/sH37LXrQN5aLuU3R7?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/kM4k8YQO84w?si=tDqksEC0KOJzLJIQ',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-035.m4a',
   },
   {
     id: 'ws-036',
@@ -1310,7 +1310,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.555195, lng: 46.5615526 },
     googleMapsUrl: 'https://maps.app.goo.gl/45stPnPM5uqyyMZGA?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://youtu.be/YbhnRm4JNXU?feature=shared',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-036.m4a',
   },
   {
     id: 'ws-037',
@@ -1319,7 +1319,7 @@ export const MASJIDS: Masjid[] = [
     region: 'westSouth',
     coordinates: { lat: 24.6085079, lng: 46.7406142 },
     googleMapsUrl: 'https://maps.app.goo.gl/SJEyRdgR1UhZfmps8?g_st=com.google.maps.preview.copy',
-    audioUrl: 'https://www.youtube.com/watch?v=VejKV-UWoY0',
+    audioUrl: 'https://masjid.nawaf-alsheddi.com/youtube-audio/ws-037.m4a',
   },
   {
     id: 'ws-038',
