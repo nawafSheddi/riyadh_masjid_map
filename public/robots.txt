@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://masajid.nawaf-alsheddi.com/sitemap.xml
